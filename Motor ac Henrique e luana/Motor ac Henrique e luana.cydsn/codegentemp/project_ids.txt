@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|232ad863-f81c-4d32-a2f9-b598cc5795e9
+C:\Users\Henrique\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|86f966dd-7330-4d2e-906a-1220f27c8bed
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|e59ded8e-f7f4-44f5-84ac-e8a7b4fa4318
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|b2c99d07-420b-418f-a713-8239876926fe
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|d9952f58-238b-4f12-b49d-478283cf47e7
+C:\Users\Henrique\Documents\PSoC Creator\Motor ac Henrique e luana\Motor ac Henrique e luana.cydsn\Motor ac Henrique e luana.cyprj|b7a98980-6a34-4c21-af85-3fd1aea658ab

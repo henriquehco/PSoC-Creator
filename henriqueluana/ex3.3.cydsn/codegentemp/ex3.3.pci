@@ -1,0 +1,16 @@
+# ex3.3
+# 2022-10-01 01:27:22Z
+
+# IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
+dont_use_io iocell 3 2
+# IO_3@[IOP=(3)][IoId=(3)] is reserved: SWDDebugEnabled
+dont_use_io iocell 3 3
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "bd(0)" iocell 0 7
+set_io "be(0)" iocell 2 7
+set_io "in1(0)" iocell 2 6
+set_io "in2(0)" iocell 3 7
+set_io "in3(0)" iocell 0 0
+set_io "in4(0)" iocell 3 5
+set_io "ena(0)" iocell 0 4
+set_io "enb(0)" iocell 0 5

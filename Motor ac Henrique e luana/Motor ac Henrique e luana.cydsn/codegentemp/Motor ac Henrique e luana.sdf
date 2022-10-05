@@ -1,0 +1,23 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2022-09-10T01:37:39Z")
+ (DESIGN "Motor ac Henrique e luana")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.4")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "Motor ac Henrique e luana")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT b1\(0\)_PAD b1\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT b2\(0\)_PAD b2\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT placa\(0\)_PAD placa\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT mld\(0\)_PAD mld\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT mle\(0\)_PAD mle\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)
