@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
+  <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="ENABLE" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Em_EEPROM_Dynamic" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="cy_lfclk" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Desliga_Liga" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="IN2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="IN1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="antihorario" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="horario" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+</blockRegMap>

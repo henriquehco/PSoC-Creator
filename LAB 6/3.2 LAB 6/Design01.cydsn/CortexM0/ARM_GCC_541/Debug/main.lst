@@ -1,0 +1,649 @@
+ARM GAS  C:\Users\luann\AppData\Local\Temp\cc8wOP8S.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.main,"ax",%progbits
+  20              		.align	2
+  21              		.global	main
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	main, %function
+  25              	main:
+  26              	.LFB32:
+  27              		.file 1 "main.c"
+   1:main.c        **** /* ========================================
+   2:main.c        ****  *
+   3:main.c        ****  * Copyright YOUR COMPANY, THE YEAR
+   4:main.c        ****  * All Rights Reserved
+   5:main.c        ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:main.c        ****  *
+   7:main.c        ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:main.c        ****  * WHICH IS THE PROPERTY OF your company.
+   9:main.c        ****  *
+  10:main.c        ****  * ========================================
+  11:main.c        **** */
+  12:main.c        **** #include "project.h"
+  13:main.c        **** 
+  14:main.c        **** int main(void)
+  15:main.c        **** {
+  28              		.loc 1 15 0
+  29              		.cfi_startproc
+  30              		@ Volatile: function does not return.
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33 0000 10B5     		push	{r4, lr}
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 4, -8
+  36              		.cfi_offset 14, -4
+  16:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
+  37              		.loc 1 16 0
+  38              		.syntax divided
+  39              	@ 16 "main.c" 1
+  40 0002 62B6     		CPSIE   i
+  41              	@ 0 "" 2
+ARM GAS  C:\Users\luann\AppData\Local\Temp\cc8wOP8S.s 			page 2
+
+
+  42              		.thumb
+  43              		.syntax unified
+  44              	.L5:
+  17:main.c        **** 
+  18:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  19:main.c        ****     
+  20:main.c        ****   
+  21:main.c        ****     for(;;)
+  22:main.c        ****    
+  23:main.c        ****     {
+  24:main.c        ****         /* Place your application code here. */
+  25:main.c        ****         
+  26:main.c        ****         
+  27:main.c        ****         CyDelay(200);
+  45              		.loc 1 27 0
+  46 0004 C820     		movs	r0, #200
+  47 0006 FFF7FEFF 		bl	CyDelay
+  48              	.LVL0:
+  28:main.c        ****         
+  29:main.c        ****         if (Desliga_Liga_Read() == 0){
+  49              		.loc 1 29 0
+  50 000a FFF7FEFF 		bl	Desliga_Liga_Read
+  51              	.LVL1:
+  52 000e 0028     		cmp	r0, #0
+  53 0010 02D1     		bne	.L2
+  30:main.c        ****             
+  31:main.c        ****            ENABLE_Write(0);}
+  54              		.loc 1 31 0
+  55 0012 FFF7FEFF 		bl	ENABLE_Write
+  56              	.LVL2:
+  57 0016 05E0     		b	.L3
+  58              	.L2:
+  32:main.c        ****         
+  33:main.c        ****         else if(Desliga_Liga_Read() == 1) {
+  59              		.loc 1 33 0
+  60 0018 FFF7FEFF 		bl	Desliga_Liga_Read
+  61              	.LVL3:
+  62 001c 0128     		cmp	r0, #1
+  63 001e 01D1     		bne	.L3
+  34:main.c        ****             
+  35:main.c        ****               ENABLE_Write(1);}
+  64              		.loc 1 35 0
+  65 0020 FFF7FEFF 		bl	ENABLE_Write
+  66              	.LVL4:
+  67              	.L3:
+  36:main.c        ****         
+  37:main.c        ****         if (horario_Read()==0){
+  68              		.loc 1 37 0
+  69 0024 FFF7FEFF 		bl	horario_Read
+  70              	.LVL5:
+  71 0028 0028     		cmp	r0, #0
+  72 002a 05D1     		bne	.L4
+  38:main.c        ****             IN1_Write(1);
+  73              		.loc 1 38 0
+  74 002c 0130     		adds	r0, r0, #1
+  75 002e FFF7FEFF 		bl	IN1_Write
+  76              	.LVL6:
+ARM GAS  C:\Users\luann\AppData\Local\Temp\cc8wOP8S.s 			page 3
+
+
+  39:main.c        ****             IN2_Write(0);
+  77              		.loc 1 39 0
+  78 0032 0020     		movs	r0, #0
+  79 0034 FFF7FEFF 		bl	IN2_Write
+  80              	.LVL7:
+  81              	.L4:
+  40:main.c        ****         }
+  41:main.c        ****         
+  42:main.c        ****         if (antihorario_Read() == 1) {
+  82              		.loc 1 42 0
+  83 0038 FFF7FEFF 		bl	antihorario_Read
+  84              	.LVL8:
+  85 003c 0128     		cmp	r0, #1
+  86 003e E1D1     		bne	.L5
+  43:main.c        ****             
+  44:main.c        ****             IN1_Write(0);
+  87              		.loc 1 44 0
+  88 0040 0020     		movs	r0, #0
+  89 0042 FFF7FEFF 		bl	IN1_Write
+  90              	.LVL9:
+  45:main.c        ****             IN2_Write(1);
+  91              		.loc 1 45 0
+  92 0046 0120     		movs	r0, #1
+  93 0048 FFF7FEFF 		bl	IN2_Write
+  94              	.LVL10:
+  95 004c DAE7     		b	.L5
+  96              		.cfi_endproc
+  97              	.LFE32:
+  98              		.size	main, .-main
+  99 004e C046     		.text
+ 100              	.Letext0:
+ 101              		.file 2 "Generated_Source\\PSoC4/CyLib.h"
+ 102              		.file 3 "Generated_Source\\PSoC4/Desliga_Liga.h"
+ 103              		.file 4 "Generated_Source\\PSoC4/ENABLE.h"
+ 104              		.file 5 "Generated_Source\\PSoC4/horario.h"
+ 105              		.file 6 "Generated_Source\\PSoC4/IN1.h"
+ 106              		.file 7 "Generated_Source\\PSoC4/IN2.h"
+ 107              		.file 8 "Generated_Source\\PSoC4/antihorario.h"
+ 108              		.section	.debug_info,"",%progbits
+ 109              	.Ldebug_info0:
+ 110 0000 7A010000 		.4byte	0x17a
+ 111 0004 0400     		.2byte	0x4
+ 112 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 113 000a 04       		.byte	0x4
+ 114 000b 01       		.uleb128 0x1
+ 115 000c E4000000 		.4byte	.LASF21
+ 116 0010 0C       		.byte	0xc
+ 117 0011 1B000000 		.4byte	.LASF22
+ 118 0015 5E000000 		.4byte	.LASF23
+ 119 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 120 001d 00000000 		.4byte	0
+ 121 0021 00000000 		.4byte	.Ldebug_line0
+ 122 0025 02       		.uleb128 0x2
+ 123 0026 01       		.byte	0x1
+ 124 0027 06       		.byte	0x6
+ 125 0028 85010000 		.4byte	.LASF0
+ 126 002c 02       		.uleb128 0x2
+ARM GAS  C:\Users\luann\AppData\Local\Temp\cc8wOP8S.s 			page 4
+
+
+ 127 002d 01       		.byte	0x1
+ 128 002e 08       		.byte	0x8
+ 129 002f A6000000 		.4byte	.LASF1
+ 130 0033 02       		.uleb128 0x2
+ 131 0034 02       		.byte	0x2
+ 132 0035 05       		.byte	0x5
+ 133 0036 BD010000 		.4byte	.LASF2
+ 134 003a 02       		.uleb128 0x2
+ 135 003b 02       		.byte	0x2
+ 136 003c 07       		.byte	0x7
+ 137 003d 72010000 		.4byte	.LASF3
+ 138 0041 02       		.uleb128 0x2
+ 139 0042 04       		.byte	0x4
+ 140 0043 05       		.byte	0x5
+ 141 0044 B9000000 		.4byte	.LASF4
+ 142 0048 02       		.uleb128 0x2
+ 143 0049 04       		.byte	0x4
+ 144 004a 07       		.byte	0x7
+ 145 004b 2F000000 		.4byte	.LASF5
+ 146 004f 02       		.uleb128 0x2
+ 147 0050 08       		.byte	0x8
+ 148 0051 05       		.byte	0x5
+ 149 0052 00000000 		.4byte	.LASF6
+ 150 0056 02       		.uleb128 0x2
+ 151 0057 08       		.byte	0x8
+ 152 0058 07       		.byte	0x7
+ 153 0059 41000000 		.4byte	.LASF7
+ 154 005d 03       		.uleb128 0x3
+ 155 005e 04       		.byte	0x4
+ 156 005f 05       		.byte	0x5
+ 157 0060 696E7400 		.ascii	"int\000"
+ 158 0064 02       		.uleb128 0x2
+ 159 0065 04       		.byte	0x4
+ 160 0066 07       		.byte	0x7
+ 161 0067 0E000000 		.4byte	.LASF8
+ 162 006b 02       		.uleb128 0x2
+ 163 006c 04       		.byte	0x4
+ 164 006d 04       		.byte	0x4
+ 165 006e 58000000 		.4byte	.LASF9
+ 166 0072 02       		.uleb128 0x2
+ 167 0073 08       		.byte	0x8
+ 168 0074 04       		.byte	0x4
+ 169 0075 CC000000 		.4byte	.LASF10
+ 170 0079 02       		.uleb128 0x2
+ 171 007a 01       		.byte	0x1
+ 172 007b 08       		.byte	0x8
+ 173 007c B4000000 		.4byte	.LASF11
+ 174 0080 02       		.uleb128 0x2
+ 175 0081 04       		.byte	0x4
+ 176 0082 07       		.byte	0x7
+ 177 0083 B4010000 		.4byte	.LASF12
+ 178 0087 02       		.uleb128 0x2
+ 179 0088 08       		.byte	0x8
+ 180 0089 04       		.byte	0x4
+ 181 008a 91010000 		.4byte	.LASF13
+ 182 008e 04       		.uleb128 0x4
+ 183 008f 22000000 		.4byte	.LASF24
+ARM GAS  C:\Users\luann\AppData\Local\Temp\cc8wOP8S.s 			page 5
+
+
+ 184 0093 01       		.byte	0x1
+ 185 0094 0E       		.byte	0xe
+ 186 0095 5D000000 		.4byte	0x5d
+ 187 0099 00000000 		.4byte	.LFB32
+ 188 009d 4E000000 		.4byte	.LFE32-.LFB32
+ 189 00a1 01       		.uleb128 0x1
+ 190 00a2 9C       		.byte	0x9c
+ 191 00a3 30010000 		.4byte	0x130
+ 192 00a7 05       		.uleb128 0x5
+ 193 00a8 0A000000 		.4byte	.LVL0
+ 194 00ac 30010000 		.4byte	0x130
+ 195 00b0 BB000000 		.4byte	0xbb
+ 196 00b4 06       		.uleb128 0x6
+ 197 00b5 01       		.uleb128 0x1
+ 198 00b6 50       		.byte	0x50
+ 199 00b7 02       		.uleb128 0x2
+ 200 00b8 08       		.byte	0x8
+ 201 00b9 C8       		.byte	0xc8
+ 202 00ba 00       		.byte	0
+ 203 00bb 07       		.uleb128 0x7
+ 204 00bc 0E000000 		.4byte	.LVL1
+ 205 00c0 3B010000 		.4byte	0x13b
+ 206 00c4 07       		.uleb128 0x7
+ 207 00c5 16000000 		.4byte	.LVL2
+ 208 00c9 46010000 		.4byte	0x146
+ 209 00cd 07       		.uleb128 0x7
+ 210 00ce 1C000000 		.4byte	.LVL3
+ 211 00d2 3B010000 		.4byte	0x13b
+ 212 00d6 07       		.uleb128 0x7
+ 213 00d7 24000000 		.4byte	.LVL4
+ 214 00db 46010000 		.4byte	0x146
+ 215 00df 07       		.uleb128 0x7
+ 216 00e0 28000000 		.4byte	.LVL5
+ 217 00e4 51010000 		.4byte	0x151
+ 218 00e8 07       		.uleb128 0x7
+ 219 00e9 32000000 		.4byte	.LVL6
+ 220 00ed 5C010000 		.4byte	0x15c
+ 221 00f1 05       		.uleb128 0x5
+ 222 00f2 38000000 		.4byte	.LVL7
+ 223 00f6 67010000 		.4byte	0x167
+ 224 00fa 04010000 		.4byte	0x104
+ 225 00fe 06       		.uleb128 0x6
+ 226 00ff 01       		.uleb128 0x1
+ 227 0100 50       		.byte	0x50
+ 228 0101 01       		.uleb128 0x1
+ 229 0102 30       		.byte	0x30
+ 230 0103 00       		.byte	0
+ 231 0104 07       		.uleb128 0x7
+ 232 0105 3C000000 		.4byte	.LVL8
+ 233 0109 72010000 		.4byte	0x172
+ 234 010d 05       		.uleb128 0x5
+ 235 010e 46000000 		.4byte	.LVL9
+ 236 0112 5C010000 		.4byte	0x15c
+ 237 0116 20010000 		.4byte	0x120
+ 238 011a 06       		.uleb128 0x6
+ 239 011b 01       		.uleb128 0x1
+ 240 011c 50       		.byte	0x50
+ARM GAS  C:\Users\luann\AppData\Local\Temp\cc8wOP8S.s 			page 6
+
+
+ 241 011d 01       		.uleb128 0x1
+ 242 011e 30       		.byte	0x30
+ 243 011f 00       		.byte	0
+ 244 0120 08       		.uleb128 0x8
+ 245 0121 4C000000 		.4byte	.LVL10
+ 246 0125 67010000 		.4byte	0x167
+ 247 0129 06       		.uleb128 0x6
+ 248 012a 01       		.uleb128 0x1
+ 249 012b 50       		.byte	0x50
+ 250 012c 01       		.uleb128 0x1
+ 251 012d 31       		.byte	0x31
+ 252 012e 00       		.byte	0
+ 253 012f 00       		.byte	0
+ 254 0130 09       		.uleb128 0x9
+ 255 0131 27000000 		.4byte	.LASF14
+ 256 0135 27000000 		.4byte	.LASF14
+ 257 0139 02       		.byte	0x2
+ 258 013a EC       		.byte	0xec
+ 259 013b 09       		.uleb128 0x9
+ 260 013c D4010000 		.4byte	.LASF15
+ 261 0140 D4010000 		.4byte	.LASF15
+ 262 0144 03       		.byte	0x3
+ 263 0145 32       		.byte	0x32
+ 264 0146 09       		.uleb128 0x9
+ 265 0147 A7010000 		.4byte	.LASF16
+ 266 014b A7010000 		.4byte	.LASF16
+ 267 014f 04       		.byte	0x4
+ 268 0150 33       		.byte	0x33
+ 269 0151 09       		.uleb128 0x9
+ 270 0152 C7010000 		.4byte	.LASF17
+ 271 0156 C7010000 		.4byte	.LASF17
+ 272 015a 05       		.byte	0x5
+ 273 015b 32       		.byte	0x32
+ 274 015c 09       		.uleb128 0x9
+ 275 015d C2000000 		.4byte	.LASF18
+ 276 0161 C2000000 		.4byte	.LASF18
+ 277 0165 06       		.byte	0x6
+ 278 0166 33       		.byte	0x33
+ 279 0167 09       		.uleb128 0x9
+ 280 0168 9D010000 		.4byte	.LASF19
+ 281 016c 9D010000 		.4byte	.LASF19
+ 282 0170 07       		.byte	0x7
+ 283 0171 33       		.byte	0x33
+ 284 0172 09       		.uleb128 0x9
+ 285 0173 D3000000 		.4byte	.LASF20
+ 286 0177 D3000000 		.4byte	.LASF20
+ 287 017b 08       		.byte	0x8
+ 288 017c 32       		.byte	0x32
+ 289 017d 00       		.byte	0
+ 290              		.section	.debug_abbrev,"",%progbits
+ 291              	.Ldebug_abbrev0:
+ 292 0000 01       		.uleb128 0x1
+ 293 0001 11       		.uleb128 0x11
+ 294 0002 01       		.byte	0x1
+ 295 0003 25       		.uleb128 0x25
+ 296 0004 0E       		.uleb128 0xe
+ 297 0005 13       		.uleb128 0x13
+ARM GAS  C:\Users\luann\AppData\Local\Temp\cc8wOP8S.s 			page 7
+
+
+ 298 0006 0B       		.uleb128 0xb
+ 299 0007 03       		.uleb128 0x3
+ 300 0008 0E       		.uleb128 0xe
+ 301 0009 1B       		.uleb128 0x1b
+ 302 000a 0E       		.uleb128 0xe
+ 303 000b 55       		.uleb128 0x55
+ 304 000c 17       		.uleb128 0x17
+ 305 000d 11       		.uleb128 0x11
+ 306 000e 01       		.uleb128 0x1
+ 307 000f 10       		.uleb128 0x10
+ 308 0010 17       		.uleb128 0x17
+ 309 0011 00       		.byte	0
+ 310 0012 00       		.byte	0
+ 311 0013 02       		.uleb128 0x2
+ 312 0014 24       		.uleb128 0x24
+ 313 0015 00       		.byte	0
+ 314 0016 0B       		.uleb128 0xb
+ 315 0017 0B       		.uleb128 0xb
+ 316 0018 3E       		.uleb128 0x3e
+ 317 0019 0B       		.uleb128 0xb
+ 318 001a 03       		.uleb128 0x3
+ 319 001b 0E       		.uleb128 0xe
+ 320 001c 00       		.byte	0
+ 321 001d 00       		.byte	0
+ 322 001e 03       		.uleb128 0x3
+ 323 001f 24       		.uleb128 0x24
+ 324 0020 00       		.byte	0
+ 325 0021 0B       		.uleb128 0xb
+ 326 0022 0B       		.uleb128 0xb
+ 327 0023 3E       		.uleb128 0x3e
+ 328 0024 0B       		.uleb128 0xb
+ 329 0025 03       		.uleb128 0x3
+ 330 0026 08       		.uleb128 0x8
+ 331 0027 00       		.byte	0
+ 332 0028 00       		.byte	0
+ 333 0029 04       		.uleb128 0x4
+ 334 002a 2E       		.uleb128 0x2e
+ 335 002b 01       		.byte	0x1
+ 336 002c 3F       		.uleb128 0x3f
+ 337 002d 19       		.uleb128 0x19
+ 338 002e 03       		.uleb128 0x3
+ 339 002f 0E       		.uleb128 0xe
+ 340 0030 3A       		.uleb128 0x3a
+ 341 0031 0B       		.uleb128 0xb
+ 342 0032 3B       		.uleb128 0x3b
+ 343 0033 0B       		.uleb128 0xb
+ 344 0034 27       		.uleb128 0x27
+ 345 0035 19       		.uleb128 0x19
+ 346 0036 49       		.uleb128 0x49
+ 347 0037 13       		.uleb128 0x13
+ 348 0038 8701     		.uleb128 0x87
+ 349 003a 19       		.uleb128 0x19
+ 350 003b 11       		.uleb128 0x11
+ 351 003c 01       		.uleb128 0x1
+ 352 003d 12       		.uleb128 0x12
+ 353 003e 06       		.uleb128 0x6
+ 354 003f 40       		.uleb128 0x40
+ARM GAS  C:\Users\luann\AppData\Local\Temp\cc8wOP8S.s 			page 8
+
+
+ 355 0040 18       		.uleb128 0x18
+ 356 0041 9742     		.uleb128 0x2117
+ 357 0043 19       		.uleb128 0x19
+ 358 0044 01       		.uleb128 0x1
+ 359 0045 13       		.uleb128 0x13
+ 360 0046 00       		.byte	0
+ 361 0047 00       		.byte	0
+ 362 0048 05       		.uleb128 0x5
+ 363 0049 898201   		.uleb128 0x4109
+ 364 004c 01       		.byte	0x1
+ 365 004d 11       		.uleb128 0x11
+ 366 004e 01       		.uleb128 0x1
+ 367 004f 31       		.uleb128 0x31
+ 368 0050 13       		.uleb128 0x13
+ 369 0051 01       		.uleb128 0x1
+ 370 0052 13       		.uleb128 0x13
+ 371 0053 00       		.byte	0
+ 372 0054 00       		.byte	0
+ 373 0055 06       		.uleb128 0x6
+ 374 0056 8A8201   		.uleb128 0x410a
+ 375 0059 00       		.byte	0
+ 376 005a 02       		.uleb128 0x2
+ 377 005b 18       		.uleb128 0x18
+ 378 005c 9142     		.uleb128 0x2111
+ 379 005e 18       		.uleb128 0x18
+ 380 005f 00       		.byte	0
+ 381 0060 00       		.byte	0
+ 382 0061 07       		.uleb128 0x7
+ 383 0062 898201   		.uleb128 0x4109
+ 384 0065 00       		.byte	0
+ 385 0066 11       		.uleb128 0x11
+ 386 0067 01       		.uleb128 0x1
+ 387 0068 31       		.uleb128 0x31
+ 388 0069 13       		.uleb128 0x13
+ 389 006a 00       		.byte	0
+ 390 006b 00       		.byte	0
+ 391 006c 08       		.uleb128 0x8
+ 392 006d 898201   		.uleb128 0x4109
+ 393 0070 01       		.byte	0x1
+ 394 0071 11       		.uleb128 0x11
+ 395 0072 01       		.uleb128 0x1
+ 396 0073 31       		.uleb128 0x31
+ 397 0074 13       		.uleb128 0x13
+ 398 0075 00       		.byte	0
+ 399 0076 00       		.byte	0
+ 400 0077 09       		.uleb128 0x9
+ 401 0078 2E       		.uleb128 0x2e
+ 402 0079 00       		.byte	0
+ 403 007a 3F       		.uleb128 0x3f
+ 404 007b 19       		.uleb128 0x19
+ 405 007c 3C       		.uleb128 0x3c
+ 406 007d 19       		.uleb128 0x19
+ 407 007e 6E       		.uleb128 0x6e
+ 408 007f 0E       		.uleb128 0xe
+ 409 0080 03       		.uleb128 0x3
+ 410 0081 0E       		.uleb128 0xe
+ 411 0082 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\luann\AppData\Local\Temp\cc8wOP8S.s 			page 9
+
+
+ 412 0083 0B       		.uleb128 0xb
+ 413 0084 3B       		.uleb128 0x3b
+ 414 0085 0B       		.uleb128 0xb
+ 415 0086 00       		.byte	0
+ 416 0087 00       		.byte	0
+ 417 0088 00       		.byte	0
+ 418              		.section	.debug_aranges,"",%progbits
+ 419 0000 1C000000 		.4byte	0x1c
+ 420 0004 0200     		.2byte	0x2
+ 421 0006 00000000 		.4byte	.Ldebug_info0
+ 422 000a 04       		.byte	0x4
+ 423 000b 00       		.byte	0
+ 424 000c 0000     		.2byte	0
+ 425 000e 0000     		.2byte	0
+ 426 0010 00000000 		.4byte	.LFB32
+ 427 0014 4E000000 		.4byte	.LFE32-.LFB32
+ 428 0018 00000000 		.4byte	0
+ 429 001c 00000000 		.4byte	0
+ 430              		.section	.debug_ranges,"",%progbits
+ 431              	.Ldebug_ranges0:
+ 432 0000 00000000 		.4byte	.LFB32
+ 433 0004 4E000000 		.4byte	.LFE32
+ 434 0008 00000000 		.4byte	0
+ 435 000c 00000000 		.4byte	0
+ 436              		.section	.debug_line,"",%progbits
+ 437              	.Ldebug_line0:
+ 438 0000 B0000000 		.section	.debug_str,"MS",%progbits,1
+ 438      02008D00 
+ 438      00000201 
+ 438      FB0E0D00 
+ 438      01010101 
+ 439              	.LASF6:
+ 440 0000 6C6F6E67 		.ascii	"long long int\000"
+ 440      206C6F6E 
+ 440      6720696E 
+ 440      7400
+ 441              	.LASF8:
+ 442 000e 756E7369 		.ascii	"unsigned int\000"
+ 442      676E6564 
+ 442      20696E74 
+ 442      00
+ 443              	.LASF22:
+ 444 001b 6D61696E 		.ascii	"main.c\000"
+ 444      2E6300
+ 445              	.LASF24:
+ 446 0022 6D61696E 		.ascii	"main\000"
+ 446      00
+ 447              	.LASF14:
+ 448 0027 43794465 		.ascii	"CyDelay\000"
+ 448      6C617900 
+ 449              	.LASF5:
+ 450 002f 6C6F6E67 		.ascii	"long unsigned int\000"
+ 450      20756E73 
+ 450      69676E65 
+ 450      6420696E 
+ 450      7400
+ 451              	.LASF7:
+ARM GAS  C:\Users\luann\AppData\Local\Temp\cc8wOP8S.s 			page 10
+
+
+ 452 0041 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 452      206C6F6E 
+ 452      6720756E 
+ 452      7369676E 
+ 452      65642069 
+ 453              	.LASF9:
+ 454 0058 666C6F61 		.ascii	"float\000"
+ 454      7400
+ 455              	.LASF23:
+ 456 005e 433A5C55 		.ascii	"C:\\Users\\luann\\OneDrive\\Documents\\PSoC Creator"
+ 456      73657273 
+ 456      5C6C7561 
+ 456      6E6E5C4F 
+ 456      6E654472 
+ 457 008c 5C332E32 		.ascii	"\\3.2 LAB 6\\Design01.cydsn\000"
+ 457      204C4142 
+ 457      20365C44 
+ 457      65736967 
+ 457      6E30312E 
+ 458              	.LASF1:
+ 459 00a6 756E7369 		.ascii	"unsigned char\000"
+ 459      676E6564 
+ 459      20636861 
+ 459      7200
+ 460              	.LASF11:
+ 461 00b4 63686172 		.ascii	"char\000"
+ 461      00
+ 462              	.LASF4:
+ 463 00b9 6C6F6E67 		.ascii	"long int\000"
+ 463      20696E74 
+ 463      00
+ 464              	.LASF18:
+ 465 00c2 494E315F 		.ascii	"IN1_Write\000"
+ 465      57726974 
+ 465      6500
+ 466              	.LASF10:
+ 467 00cc 646F7562 		.ascii	"double\000"
+ 467      6C6500
+ 468              	.LASF20:
+ 469 00d3 616E7469 		.ascii	"antihorario_Read\000"
+ 469      686F7261 
+ 469      72696F5F 
+ 469      52656164 
+ 469      00
+ 470              	.LASF21:
+ 471 00e4 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 471      43313120 
+ 471      352E342E 
+ 471      31203230 
+ 471      31363036 
+ 472 0117 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 472      20726576 
+ 472      6973696F 
+ 472      6E203233 
+ 472      37373135 
+ 473 014a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 473      66756E63 
+ARM GAS  C:\Users\luann\AppData\Local\Temp\cc8wOP8S.s 			page 11
+
+
+ 473      74696F6E 
+ 473      2D736563 
+ 473      74696F6E 
+ 474              	.LASF3:
+ 475 0172 73686F72 		.ascii	"short unsigned int\000"
+ 475      7420756E 
+ 475      7369676E 
+ 475      65642069 
+ 475      6E7400
+ 476              	.LASF0:
+ 477 0185 7369676E 		.ascii	"signed char\000"
+ 477      65642063 
+ 477      68617200 
+ 478              	.LASF13:
+ 479 0191 6C6F6E67 		.ascii	"long double\000"
+ 479      20646F75 
+ 479      626C6500 
+ 480              	.LASF19:
+ 481 019d 494E325F 		.ascii	"IN2_Write\000"
+ 481      57726974 
+ 481      6500
+ 482              	.LASF16:
+ 483 01a7 454E4142 		.ascii	"ENABLE_Write\000"
+ 483      4C455F57 
+ 483      72697465 
+ 483      00
+ 484              	.LASF12:
+ 485 01b4 73697A65 		.ascii	"sizetype\000"
+ 485      74797065 
+ 485      00
+ 486              	.LASF2:
+ 487 01bd 73686F72 		.ascii	"short int\000"
+ 487      7420696E 
+ 487      7400
+ 488              	.LASF17:
+ 489 01c7 686F7261 		.ascii	"horario_Read\000"
+ 489      72696F5F 
+ 489      52656164 
+ 489      00
+ 490              	.LASF15:
+ 491 01d4 4465736C 		.ascii	"Desliga_Liga_Read\000"
+ 491      6967615F 
+ 491      4C696761 
+ 491      5F526561 
+ 491      6400
+ 492              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
