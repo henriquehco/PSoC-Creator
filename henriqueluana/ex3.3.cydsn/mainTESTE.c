@@ -16,7 +16,7 @@ enum estados M_state;
 
 
    void go_to_state1(){
-        if (be_Read() == 1 || bd_Read() == 0){
+        if (bd_Read() == 0){
             M_state = Estado_1;
             in3_Write(0);
             in4_Write(0);
@@ -27,7 +27,7 @@ enum estados M_state;
 }
         
    void go_to_state2(){
-        if (be_Read() == 1 || bd_Read() == 0){
+        if (be_Read() == 1){
             M_state = Estado_2;
             in1_Write(0);
             in2_Write(1);
@@ -39,7 +39,7 @@ enum estados M_state;
 
   
      void go_to_state3(){
-        if (be_Read() == 1 || bd_Read() == 0){
+        if (be_Read() == 1){
             M_state = Estado_3;
             in1_Write(0);
             in2_Write(0);
@@ -49,7 +49,7 @@ enum estados M_state;
         }   
 }
    void go_to_state4(){
-        if (be_Read() == 1 || bd_Read() == 0){
+        if (bd_Read() == 0){
             M_state = Estado_4;
             in3_Write(0);
             in4_Write(1);

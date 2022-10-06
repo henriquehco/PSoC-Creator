@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="henriqueluana322\ex322\Source Files\main.c">
 <ExpandedNodeIds>
 <v>henriqueluana322</v>
 <v>henriqueluana322\ex322</v>
@@ -93,9 +93,6 @@
 <v>henriqueluana322\ex322\System Reference Guides</v>
 <v>henriqueluana322\ex322\System Reference Guides\cy_boot_v6_0</v>
 <v>henriqueluana322\ex322\System Reference Guides\cy_lfclk_v1_20</v>
-<v>henriqueluana322\ex322\cy_clock_v2_20.pdf</v>
-<v>henriqueluana322\ex322\cy_pins_v2_20.pdf</v>
-<v>henriqueluana322\ex322\TCPWM_P4_v2_10.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>henriqueluana322</v>
@@ -105,9 +102,6 @@
 <v>henriqueluana322\ex322\System Reference Guides</v>
 <v>henriqueluana322\ex322\System Reference Guides\cy_boot_v6_0</v>
 <v>henriqueluana322\ex322\System Reference Guides\cy_lfclk_v1_20</v>
-<v>henriqueluana322\ex322\cy_clock_v2_20.pdf</v>
-<v>henriqueluana322\ex322\cy_pins_v2_20.pdf</v>
-<v>henriqueluana322\ex322\TCPWM_P4_v2_10.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -116,7 +110,16 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\ex322.cydsn\main.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1439, 735" SelectedTabbedMdiWindow="a561261c-92e3-4abe-82c6-4c2bd197f5b9"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="592eed0f-69c2-4692-bfc5-1d40d24a7741" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\henriqueluana322\ex322.cydsn\main.c" Guid="a561261c-92e3-4abe-82c6-4c2bd197f5b9" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

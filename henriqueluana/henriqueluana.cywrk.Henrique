@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="henriqueluana">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="henriqueluana\ex3.3\Source Files\main.c">
 <ExpandedNodeIds>
 <v>henriqueluana</v>
 <v>henriqueluana\ex3.3</v>
@@ -215,6 +215,7 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\ex3.3.cydsn\ex3.3.cydwr" />
+<name v=".\ex3.3.cydsn\mainTESTE.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -222,7 +223,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1439, 735" SelectedTabbedMdiWindow="592eed0f-69c2-4692-bfc5-1d40d24a7741"><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\henriqueluana\ex3.3.cydsn\ex3.3.cydwr" Guid="c3e05ada-ab79-404f-8448-c384e9da8d60" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="592eed0f-69c2-4692-bfc5-1d40d24a7741" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1439, 735" SelectedTabbedMdiWindow="ea79fdb0-3b4f-4aed-a2e9-2e194c0320a3"><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\henriqueluana\ex3.3.cydsn\ex3.3.cydwr" Guid="c3e05ada-ab79-404f-8448-c384e9da8d60" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="592eed0f-69c2-4692-bfc5-1d40d24a7741" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\henriqueluana\ex3.3.cydsn\mainTESTE.c" Guid="ea79fdb0-3b4f-4aed-a2e9-2e194c0320a3" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
