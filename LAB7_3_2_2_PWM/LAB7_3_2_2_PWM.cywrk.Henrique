@@ -200,7 +200,19 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\LAB7_3_2_2_PWM.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\LAB7_3_2_2_PWM.cydsn\LAB7_3_2_2_PWM.cydwr" />
+<name v=".\LAB7_3_2_2_PWM.cydsn\main.c" />
+<name v=".\LAB7_3_2_2_PWM.cydsn\Generated_Source\PSoC4\BT.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1200, 735" SelectedTabbedMdiWindow="00c733a2-a65a-4b88-843c-bf3e1d2543ac"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="592eed0f-69c2-4692-bfc5-1d40d24a7741" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB7_3_2_2_PWM\LAB7_3_2_2_PWM.cydsn\TopDesign\TopDesign.cysch" Guid="af3a542b-15f9-48b0-8808-d83ae4e5e8e7" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB7_3_2_2_PWM\LAB7_3_2_2_PWM.cydsn\LAB7_3_2_2_PWM.cydwr" Guid="df818509-6f42-4a72-ae1e-75a22cf5aa00" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB7_3_2_2_PWM\LAB7_3_2_2_PWM.cydsn\main.c" Guid="00c733a2-a65a-4b88-843c-bf3e1d2543ac" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB7_3_2_2_PWM\LAB7_3_2_2_PWM.cydsn\Generated_Source\PSoC4\BT.c" Guid="82448d5f-e148-4573-9c55-87e8ef7a1286" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
