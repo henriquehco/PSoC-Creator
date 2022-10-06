@@ -123,6 +123,30 @@
 <VisibleNodeIds>
 <v>Pratica7</v>
 <v>Pratica7\Pratica7</v>
+<v>Pratica7\Pratica7\CortexM0</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files\LED.lst</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_PM.lst</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_1.lst</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_1_PM.lst</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Pratica7.elf</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Pratica7.hex</v>
+<v>Pratica7\Pratica7\CortexM0\ARM_GCC_541\Debug\Pratica7.map</v>
+<v>Pratica7\Pratica7\Pratica7.gpdsc</v>
 <v>Pratica7\Pratica7\Pratica7.rpt</v>
 <v>Pratica7\Pratica7\Pratica7_timing.html</v>
 </VisibleNodeIds>
@@ -167,6 +191,7 @@
 <OpenDocs>
 <name v=".\Pratica7.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\Pratica7.cydsn\main.c" />
+<name v=".\Pratica7.cydsn\Pratica7.cydwr" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -174,7 +199,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1439, 735" SelectedTabbedMdiWindow="832e3617-d1af-44d3-b172-4f8f97273894"><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\Pratica7\Pratica7.cydsn\TopDesign\TopDesign.cysch" Guid="4edbbc4c-248d-4e40-8e94-8df5a1fc022c" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\Pratica7\Pratica7.cydsn\main.c" Guid="832e3617-d1af-44d3-b172-4f8f97273894" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1491, 735" SelectedTabbedMdiWindow="4edbbc4c-248d-4e40-8e94-8df5a1fc022c"><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\Pratica7\Pratica7.cydsn\TopDesign\TopDesign.cysch" Guid="4edbbc4c-248d-4e40-8e94-8df5a1fc022c" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\Pratica7\Pratica7.cydsn\main.c" Guid="832e3617-d1af-44d3-b172-4f8f97273894" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="592eed0f-69c2-4692-bfc5-1d40d24a7741" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\Pratica7\Pratica7.cydsn\Pratica7.cydwr" Guid="6c3702ab-58cb-4c63-b01a-008bf4f24a2a" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

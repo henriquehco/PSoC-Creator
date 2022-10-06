@@ -1,0 +1,1240 @@
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.go_to_state20,"ax",%progbits
+  20              		.align	2
+  21              		.global	go_to_state20
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	go_to_state20, %function
+  25              	go_to_state20:
+  26              	.LFB32:
+  27              		.file 1 "main.c"
+   1:main.c        **** /* ========================================
+   2:main.c        ****  *
+   3:main.c        ****  * Copyright YOUR COMPANY, THE YEAR
+   4:main.c        ****  * All Rights Reserved
+   5:main.c        ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:main.c        ****  *
+   7:main.c        ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:main.c        ****  * WHICH IS THE PROPERTY OF your company.
+   9:main.c        ****  *
+  10:main.c        ****  * ========================================
+  11:main.c        **** */
+  12:main.c        **** #include "project.h"
+  13:main.c        **** enum estados {ESTADO_20 = 1, ESTADO_40,ESTADO_60,ESTADO_70,ESTADO_80,ESTADO_100};
+  14:main.c        **** enum estados led_state;
+  15:main.c        **** 
+  16:main.c        ****    void go_to_state20(){
+  28              		.loc 1 16 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 10B5     		push	{r4, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 4, -8
+  35              		.cfi_offset 14, -4
+  17:main.c        ****         if (BT_Read() == 0){
+  36              		.loc 1 17 0
+  37 0002 FFF7FEFF 		bl	BT_Read
+  38              	.LVL0:
+  39 0006 0028     		cmp	r0, #0
+  40 0008 05D1     		bne	.L1
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 2
+
+
+  18:main.c        ****             led_state = ESTADO_20;
+  41              		.loc 1 18 0
+  42 000a 0122     		movs	r2, #1
+  43 000c 024B     		ldr	r3, .L3
+  44 000e 1A70     		strb	r2, [r3]
+  19:main.c        ****             PWM_1_WriteCompare (200);
+  45              		.loc 1 19 0
+  46 0010 C830     		adds	r0, r0, #200
+  47 0012 FFF7FEFF 		bl	PWM_1_WriteCompare
+  48              	.LVL1:
+  49              	.L1:
+  20:main.c        **** 
+  21:main.c        ****         }
+  22:main.c        **** }
+  50              		.loc 1 22 0
+  51              		@ sp needed
+  52 0016 10BD     		pop	{r4, pc}
+  53              	.L4:
+  54              		.align	2
+  55              	.L3:
+  56 0018 00000000 		.word	led_state
+  57              		.cfi_endproc
+  58              	.LFE32:
+  59              		.size	go_to_state20, .-go_to_state20
+  60              		.section	.text.go_to_state40,"ax",%progbits
+  61              		.align	2
+  62              		.global	go_to_state40
+  63              		.code	16
+  64              		.thumb_func
+  65              		.type	go_to_state40, %function
+  66              	go_to_state40:
+  67              	.LFB33:
+  23:main.c        ****    void go_to_state40(){
+  68              		.loc 1 23 0
+  69              		.cfi_startproc
+  70              		@ args = 0, pretend = 0, frame = 0
+  71              		@ frame_needed = 0, uses_anonymous_args = 0
+  72 0000 10B5     		push	{r4, lr}
+  73              		.cfi_def_cfa_offset 8
+  74              		.cfi_offset 4, -8
+  75              		.cfi_offset 14, -4
+  24:main.c        ****         if (BT_Read() == 0){
+  76              		.loc 1 24 0
+  77 0002 FFF7FEFF 		bl	BT_Read
+  78              	.LVL2:
+  79 0006 0028     		cmp	r0, #0
+  80 0008 06D1     		bne	.L5
+  25:main.c        ****             led_state = ESTADO_40;
+  81              		.loc 1 25 0
+  82 000a 0222     		movs	r2, #2
+  83 000c 034B     		ldr	r3, .L7
+  84 000e 1A70     		strb	r2, [r3]
+  26:main.c        ****             PWM_1_WriteCompare (400);
+  85              		.loc 1 26 0
+  86 0010 9130     		adds	r0, r0, #145
+  87 0012 FF30     		adds	r0, r0, #255
+  88 0014 FFF7FEFF 		bl	PWM_1_WriteCompare
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 3
+
+
+  89              	.LVL3:
+  90              	.L5:
+  27:main.c        **** 
+  28:main.c        ****         }
+  29:main.c        **** }
+  91              		.loc 1 29 0
+  92              		@ sp needed
+  93 0018 10BD     		pop	{r4, pc}
+  94              	.L8:
+  95 001a C046     		.align	2
+  96              	.L7:
+  97 001c 00000000 		.word	led_state
+  98              		.cfi_endproc
+  99              	.LFE33:
+ 100              		.size	go_to_state40, .-go_to_state40
+ 101              		.section	.text.go_to_state60,"ax",%progbits
+ 102              		.align	2
+ 103              		.global	go_to_state60
+ 104              		.code	16
+ 105              		.thumb_func
+ 106              		.type	go_to_state60, %function
+ 107              	go_to_state60:
+ 108              	.LFB34:
+  30:main.c        ****    void go_to_state60(){
+ 109              		.loc 1 30 0
+ 110              		.cfi_startproc
+ 111              		@ args = 0, pretend = 0, frame = 0
+ 112              		@ frame_needed = 0, uses_anonymous_args = 0
+ 113 0000 10B5     		push	{r4, lr}
+ 114              		.cfi_def_cfa_offset 8
+ 115              		.cfi_offset 4, -8
+ 116              		.cfi_offset 14, -4
+  31:main.c        ****         if (BT_Read() == 0){
+ 117              		.loc 1 31 0
+ 118 0002 FFF7FEFF 		bl	BT_Read
+ 119              	.LVL4:
+ 120 0006 0028     		cmp	r0, #0
+ 121 0008 06D1     		bne	.L9
+  32:main.c        ****             led_state = ESTADO_60;
+ 122              		.loc 1 32 0
+ 123 000a 0322     		movs	r2, #3
+ 124 000c 034B     		ldr	r3, .L11
+ 125 000e 1A70     		strb	r2, [r3]
+  33:main.c        ****             PWM_1_WriteCompare (600);
+ 126              		.loc 1 33 0
+ 127 0010 9620     		movs	r0, #150
+ 128 0012 8000     		lsls	r0, r0, #2
+ 129 0014 FFF7FEFF 		bl	PWM_1_WriteCompare
+ 130              	.LVL5:
+ 131              	.L9:
+  34:main.c        **** 
+  35:main.c        ****         }
+  36:main.c        **** }
+ 132              		.loc 1 36 0
+ 133              		@ sp needed
+ 134 0018 10BD     		pop	{r4, pc}
+ 135              	.L12:
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 4
+
+
+ 136 001a C046     		.align	2
+ 137              	.L11:
+ 138 001c 00000000 		.word	led_state
+ 139              		.cfi_endproc
+ 140              	.LFE34:
+ 141              		.size	go_to_state60, .-go_to_state60
+ 142              		.section	.text.go_to_state70,"ax",%progbits
+ 143              		.align	2
+ 144              		.global	go_to_state70
+ 145              		.code	16
+ 146              		.thumb_func
+ 147              		.type	go_to_state70, %function
+ 148              	go_to_state70:
+ 149              	.LFB35:
+  37:main.c        ****    void go_to_state70(){
+ 150              		.loc 1 37 0
+ 151              		.cfi_startproc
+ 152              		@ args = 0, pretend = 0, frame = 0
+ 153              		@ frame_needed = 0, uses_anonymous_args = 0
+ 154 0000 10B5     		push	{r4, lr}
+ 155              		.cfi_def_cfa_offset 8
+ 156              		.cfi_offset 4, -8
+ 157              		.cfi_offset 14, -4
+  38:main.c        ****         if (BT_Read() == 0){
+ 158              		.loc 1 38 0
+ 159 0002 FFF7FEFF 		bl	BT_Read
+ 160              	.LVL6:
+ 161 0006 0028     		cmp	r0, #0
+ 162 0008 06D1     		bne	.L13
+  39:main.c        ****             led_state = ESTADO_70;
+ 163              		.loc 1 39 0
+ 164 000a 0422     		movs	r2, #4
+ 165 000c 034B     		ldr	r3, .L15
+ 166 000e 1A70     		strb	r2, [r3]
+  40:main.c        ****             PWM_1_WriteCompare (700);
+ 167              		.loc 1 40 0
+ 168 0010 AF20     		movs	r0, #175
+ 169 0012 8000     		lsls	r0, r0, #2
+ 170 0014 FFF7FEFF 		bl	PWM_1_WriteCompare
+ 171              	.LVL7:
+ 172              	.L13:
+  41:main.c        **** 
+  42:main.c        ****         }
+  43:main.c        **** }
+ 173              		.loc 1 43 0
+ 174              		@ sp needed
+ 175 0018 10BD     		pop	{r4, pc}
+ 176              	.L16:
+ 177 001a C046     		.align	2
+ 178              	.L15:
+ 179 001c 00000000 		.word	led_state
+ 180              		.cfi_endproc
+ 181              	.LFE35:
+ 182              		.size	go_to_state70, .-go_to_state70
+ 183              		.section	.text.go_to_state80,"ax",%progbits
+ 184              		.align	2
+ 185              		.global	go_to_state80
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 5
+
+
+ 186              		.code	16
+ 187              		.thumb_func
+ 188              		.type	go_to_state80, %function
+ 189              	go_to_state80:
+ 190              	.LFB36:
+  44:main.c        ****    void go_to_state80(){
+ 191              		.loc 1 44 0
+ 192              		.cfi_startproc
+ 193              		@ args = 0, pretend = 0, frame = 0
+ 194              		@ frame_needed = 0, uses_anonymous_args = 0
+ 195 0000 10B5     		push	{r4, lr}
+ 196              		.cfi_def_cfa_offset 8
+ 197              		.cfi_offset 4, -8
+ 198              		.cfi_offset 14, -4
+  45:main.c        ****         if (BT_Read() == 0){
+ 199              		.loc 1 45 0
+ 200 0002 FFF7FEFF 		bl	BT_Read
+ 201              	.LVL8:
+ 202 0006 0028     		cmp	r0, #0
+ 203 0008 06D1     		bne	.L17
+  46:main.c        ****             led_state = ESTADO_80;
+ 204              		.loc 1 46 0
+ 205 000a 0522     		movs	r2, #5
+ 206 000c 034B     		ldr	r3, .L19
+ 207 000e 1A70     		strb	r2, [r3]
+  47:main.c        ****             PWM_1_WriteCompare (800);
+ 208              		.loc 1 47 0
+ 209 0010 C820     		movs	r0, #200
+ 210 0012 8000     		lsls	r0, r0, #2
+ 211 0014 FFF7FEFF 		bl	PWM_1_WriteCompare
+ 212              	.LVL9:
+ 213              	.L17:
+  48:main.c        **** 
+  49:main.c        ****         }
+  50:main.c        **** }   void go_to_state100(){
+ 214              		.loc 1 50 0
+ 215              		@ sp needed
+ 216 0018 10BD     		pop	{r4, pc}
+ 217              	.L20:
+ 218 001a C046     		.align	2
+ 219              	.L19:
+ 220 001c 00000000 		.word	led_state
+ 221              		.cfi_endproc
+ 222              	.LFE36:
+ 223              		.size	go_to_state80, .-go_to_state80
+ 224              		.section	.text.go_to_state100,"ax",%progbits
+ 225              		.align	2
+ 226              		.global	go_to_state100
+ 227              		.code	16
+ 228              		.thumb_func
+ 229              		.type	go_to_state100, %function
+ 230              	go_to_state100:
+ 231              	.LFB37:
+ 232              		.loc 1 50 0
+ 233              		.cfi_startproc
+ 234              		@ args = 0, pretend = 0, frame = 0
+ 235              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 6
+
+
+ 236 0000 10B5     		push	{r4, lr}
+ 237              		.cfi_def_cfa_offset 8
+ 238              		.cfi_offset 4, -8
+ 239              		.cfi_offset 14, -4
+  51:main.c        ****         if (BT_Read() == 0){
+ 240              		.loc 1 51 0
+ 241 0002 FFF7FEFF 		bl	BT_Read
+ 242              	.LVL10:
+ 243 0006 0028     		cmp	r0, #0
+ 244 0008 06D1     		bne	.L21
+  52:main.c        ****             led_state = ESTADO_100;
+ 245              		.loc 1 52 0
+ 246 000a 0622     		movs	r2, #6
+ 247 000c 034B     		ldr	r3, .L23
+ 248 000e 1A70     		strb	r2, [r3]
+  53:main.c        ****             PWM_1_WriteCompare (1000);
+ 249              		.loc 1 53 0
+ 250 0010 FA20     		movs	r0, #250
+ 251 0012 8000     		lsls	r0, r0, #2
+ 252 0014 FFF7FEFF 		bl	PWM_1_WriteCompare
+ 253              	.LVL11:
+ 254              	.L21:
+  54:main.c        **** 
+  55:main.c        ****         }
+  56:main.c        **** }
+ 255              		.loc 1 56 0
+ 256              		@ sp needed
+ 257 0018 10BD     		pop	{r4, pc}
+ 258              	.L24:
+ 259 001a C046     		.align	2
+ 260              	.L23:
+ 261 001c 00000000 		.word	led_state
+ 262              		.cfi_endproc
+ 263              	.LFE37:
+ 264              		.size	go_to_state100, .-go_to_state100
+ 265              		.section	.text.main,"ax",%progbits
+ 266              		.align	2
+ 267              		.global	main
+ 268              		.code	16
+ 269              		.thumb_func
+ 270              		.type	main, %function
+ 271              	main:
+ 272              	.LFB38:
+  57:main.c        **** int main(void)
+  58:main.c        **** {
+ 273              		.loc 1 58 0
+ 274              		.cfi_startproc
+ 275              		@ Volatile: function does not return.
+ 276              		@ args = 0, pretend = 0, frame = 0
+ 277              		@ frame_needed = 0, uses_anonymous_args = 0
+ 278 0000 10B5     		push	{r4, lr}
+ 279              		.cfi_def_cfa_offset 8
+ 280              		.cfi_offset 4, -8
+ 281              		.cfi_offset 14, -4
+  59:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
+ 282              		.loc 1 59 0
+ 283              		.syntax divided
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 7
+
+
+ 284              	@ 59 "main.c" 1
+ 285 0002 62B6     		CPSIE   i
+ 286              	@ 0 "" 2
+  60:main.c        ****     PWM_1_Start();
+ 287              		.loc 1 60 0
+ 288              		.thumb
+ 289              		.syntax unified
+ 290 0004 FFF7FEFF 		bl	PWM_1_Start
+ 291              	.LVL12:
+  61:main.c        ****     Clock_Start();
+ 292              		.loc 1 61 0
+ 293 0008 FFF7FEFF 		bl	Clock_Start
+ 294              	.LVL13:
+ 295              	.L26:
+  62:main.c        **** 
+  63:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  64:main.c        **** 
+  65:main.c        ****     for(;;)
+  66:main.c        ****     {
+  67:main.c        ****     if (BT_Read() == 0){
+ 296              		.loc 1 67 0
+ 297 000c FFF7FEFF 		bl	BT_Read
+ 298              	.LVL14:
+ 299 0010 0028     		cmp	r0, #0
+ 300 0012 FBD1     		bne	.L26
+  68:main.c        ****         
+  69:main.c        ****         switch(led_state){
+ 301              		.loc 1 69 0
+ 302 0014 0C4B     		ldr	r3, .L35
+ 303 0016 1A78     		ldrb	r2, [r3]
+ 304 0018 062A     		cmp	r2, #6
+ 305 001a F7D8     		bhi	.L26
+ 306 001c 9300     		lsls	r3, r2, #2
+ 307 001e 0B4A     		ldr	r2, .L35+4
+ 308 0020 D358     		ldr	r3, [r2, r3]
+ 309 0022 9F46     		mov	pc, r3
+ 310              		.section	.rodata
+ 311              		.align	2
+ 312              	.L29:
+ 313 0000 0C000000 		.word	.L26
+ 314 0004 24000000 		.word	.L28
+ 315 0008 2A000000 		.word	.L30
+ 316 000c 30000000 		.word	.L31
+ 317 0010 36000000 		.word	.L32
+ 318 0014 3C000000 		.word	.L33
+ 319 0018 42000000 		.word	.L34
+ 320              		.section	.text.main
+ 321              	.L28:
+  70:main.c        ****         
+  71:main.c        ****         case ESTADO_20:
+  72:main.c        ****         go_to_state20();
+ 322              		.loc 1 72 0
+ 323 0024 FFF7FEFF 		bl	go_to_state20
+ 324              	.LVL15:
+  73:main.c        ****         break;
+ 325              		.loc 1 73 0
+ 326 0028 F0E7     		b	.L26
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 8
+
+
+ 327              	.L30:
+  74:main.c        ****          
+  75:main.c        ****         case ESTADO_40:
+  76:main.c        ****         go_to_state40();
+ 328              		.loc 1 76 0
+ 329 002a FFF7FEFF 		bl	go_to_state40
+ 330              	.LVL16:
+  77:main.c        ****         break;
+ 331              		.loc 1 77 0
+ 332 002e EDE7     		b	.L26
+ 333              	.L31:
+  78:main.c        ****         
+  79:main.c        ****         case ESTADO_60:
+  80:main.c        ****         go_to_state60();
+ 334              		.loc 1 80 0
+ 335 0030 FFF7FEFF 		bl	go_to_state60
+ 336              	.LVL17:
+  81:main.c        ****         break;
+ 337              		.loc 1 81 0
+ 338 0034 EAE7     		b	.L26
+ 339              	.L32:
+  82:main.c        ****          
+  83:main.c        ****         case ESTADO_70:
+  84:main.c        ****         go_to_state70();
+ 340              		.loc 1 84 0
+ 341 0036 FFF7FEFF 		bl	go_to_state70
+ 342              	.LVL18:
+  85:main.c        ****         break;
+ 343              		.loc 1 85 0
+ 344 003a E7E7     		b	.L26
+ 345              	.L33:
+  86:main.c        ****         
+  87:main.c        ****         case ESTADO_80:
+  88:main.c        ****         go_to_state80();
+ 346              		.loc 1 88 0
+ 347 003c FFF7FEFF 		bl	go_to_state80
+ 348              	.LVL19:
+  89:main.c        ****         break;
+ 349              		.loc 1 89 0
+ 350 0040 E4E7     		b	.L26
+ 351              	.L34:
+  90:main.c        ****         
+  91:main.c        ****         case ESTADO_100:
+  92:main.c        ****         go_to_state100();
+ 352              		.loc 1 92 0
+ 353 0042 FFF7FEFF 		bl	go_to_state100
+ 354              	.LVL20:
+  93:main.c        ****         break;
+ 355              		.loc 1 93 0
+ 356 0046 E1E7     		b	.L26
+ 357              	.L36:
+ 358              		.align	2
+ 359              	.L35:
+ 360 0048 00000000 		.word	led_state
+ 361 004c 00000000 		.word	.L29
+ 362              		.cfi_endproc
+ 363              	.LFE38:
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 9
+
+
+ 364              		.size	main, .-main
+ 365              		.comm	led_state,1,1
+ 366              		.text
+ 367              	.Letext0:
+ 368              		.file 2 "Generated_Source\\PSoC4/BT.h"
+ 369              		.file 3 "Generated_Source\\PSoC4/PWM_1.h"
+ 370              		.file 4 "Generated_Source\\PSoC4/Clock.h"
+ 371              		.section	.debug_info,"",%progbits
+ 372              	.Ldebug_info0:
+ 373 0000 7A020000 		.4byte	0x27a
+ 374 0004 0400     		.2byte	0x4
+ 375 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 376 000a 04       		.byte	0x4
+ 377 000b 01       		.uleb128 0x1
+ 378 000c 39010000 		.4byte	.LASF30
+ 379 0010 0C       		.byte	0xc
+ 380 0011 F1010000 		.4byte	.LASF31
+ 381 0015 62000000 		.4byte	.LASF32
+ 382 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 383 001d 00000000 		.4byte	0
+ 384 0021 00000000 		.4byte	.Ldebug_line0
+ 385 0025 02       		.uleb128 0x2
+ 386 0026 01       		.byte	0x1
+ 387 0027 06       		.byte	0x6
+ 388 0028 3D020000 		.4byte	.LASF0
+ 389 002c 02       		.uleb128 0x2
+ 390 002d 01       		.byte	0x1
+ 391 002e 08       		.byte	0x8
+ 392 002f AF000000 		.4byte	.LASF1
+ 393 0033 02       		.uleb128 0x2
+ 394 0034 02       		.byte	0x2
+ 395 0035 05       		.byte	0x5
+ 396 0036 FD010000 		.4byte	.LASF2
+ 397 003a 02       		.uleb128 0x2
+ 398 003b 02       		.byte	0x2
+ 399 003c 07       		.byte	0x7
+ 400 003d CF000000 		.4byte	.LASF3
+ 401 0041 02       		.uleb128 0x2
+ 402 0042 04       		.byte	0x4
+ 403 0043 05       		.byte	0x5
+ 404 0044 22020000 		.4byte	.LASF4
+ 405 0048 02       		.uleb128 0x2
+ 406 0049 04       		.byte	0x4
+ 407 004a 07       		.byte	0x7
+ 408 004b BD000000 		.4byte	.LASF5
+ 409 004f 02       		.uleb128 0x2
+ 410 0050 08       		.byte	0x8
+ 411 0051 05       		.byte	0x5
+ 412 0052 E3010000 		.4byte	.LASF6
+ 413 0056 02       		.uleb128 0x2
+ 414 0057 08       		.byte	0x8
+ 415 0058 07       		.byte	0x7
+ 416 0059 18010000 		.4byte	.LASF7
+ 417 005d 03       		.uleb128 0x3
+ 418 005e 04       		.byte	0x4
+ 419 005f 05       		.byte	0x5
+ 420 0060 696E7400 		.ascii	"int\000"
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 10
+
+
+ 421 0064 02       		.uleb128 0x2
+ 422 0065 04       		.byte	0x4
+ 423 0066 07       		.byte	0x7
+ 424 0067 00010000 		.4byte	.LASF8
+ 425 006b 02       		.uleb128 0x2
+ 426 006c 04       		.byte	0x4
+ 427 006d 04       		.byte	0x4
+ 428 006e 37020000 		.4byte	.LASF9
+ 429 0072 02       		.uleb128 0x2
+ 430 0073 08       		.byte	0x8
+ 431 0074 04       		.byte	0x4
+ 432 0075 E2000000 		.4byte	.LASF10
+ 433 0079 02       		.uleb128 0x2
+ 434 007a 01       		.byte	0x1
+ 435 007b 08       		.byte	0x8
+ 436 007c F8010000 		.4byte	.LASF11
+ 437 0080 02       		.uleb128 0x2
+ 438 0081 08       		.byte	0x8
+ 439 0082 04       		.byte	0x4
+ 440 0083 2B020000 		.4byte	.LASF12
+ 441 0087 02       		.uleb128 0x2
+ 442 0088 04       		.byte	0x4
+ 443 0089 07       		.byte	0x7
+ 444 008a C7010000 		.4byte	.LASF13
+ 445 008e 04       		.uleb128 0x4
+ 446 008f E9000000 		.4byte	.LASF33
+ 447 0093 01       		.byte	0x1
+ 448 0094 2C000000 		.4byte	0x2c
+ 449 0098 01       		.byte	0x1
+ 450 0099 0D       		.byte	0xd
+ 451 009a C3000000 		.4byte	0xc3
+ 452 009e 05       		.uleb128 0x5
+ 453 009f 49020000 		.4byte	.LASF14
+ 454 00a3 01       		.byte	0x1
+ 455 00a4 05       		.uleb128 0x5
+ 456 00a5 53020000 		.4byte	.LASF15
+ 457 00a9 02       		.byte	0x2
+ 458 00aa 05       		.uleb128 0x5
+ 459 00ab 00000000 		.4byte	.LASF16
+ 460 00af 03       		.byte	0x3
+ 461 00b0 05       		.uleb128 0x5
+ 462 00b1 F6000000 		.4byte	.LASF17
+ 463 00b5 04       		.byte	0x4
+ 464 00b6 05       		.uleb128 0x5
+ 465 00b7 0A000000 		.4byte	.LASF18
+ 466 00bb 05       		.byte	0x5
+ 467 00bc 05       		.uleb128 0x5
+ 468 00bd 0D010000 		.4byte	.LASF19
+ 469 00c1 06       		.byte	0x6
+ 470 00c2 00       		.byte	0
+ 471 00c3 06       		.uleb128 0x6
+ 472 00c4 14000000 		.4byte	.LASF20
+ 473 00c8 01       		.byte	0x1
+ 474 00c9 10       		.byte	0x10
+ 475 00ca 00000000 		.4byte	.LFB32
+ 476 00ce 1C000000 		.4byte	.LFE32-.LFB32
+ 477 00d2 01       		.uleb128 0x1
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 11
+
+
+ 478 00d3 9C       		.byte	0x9c
+ 479 00d4 EB000000 		.4byte	0xeb
+ 480 00d8 07       		.uleb128 0x7
+ 481 00d9 06000000 		.4byte	.LVL0
+ 482 00dd 4F020000 		.4byte	0x24f
+ 483 00e1 07       		.uleb128 0x7
+ 484 00e2 16000000 		.4byte	.LVL1
+ 485 00e6 5A020000 		.4byte	0x25a
+ 486 00ea 00       		.byte	0
+ 487 00eb 06       		.uleb128 0x6
+ 488 00ec 22000000 		.4byte	.LASF21
+ 489 00f0 01       		.byte	0x1
+ 490 00f1 17       		.byte	0x17
+ 491 00f2 00000000 		.4byte	.LFB33
+ 492 00f6 20000000 		.4byte	.LFE33-.LFB33
+ 493 00fa 01       		.uleb128 0x1
+ 494 00fb 9C       		.byte	0x9c
+ 495 00fc 13010000 		.4byte	0x113
+ 496 0100 07       		.uleb128 0x7
+ 497 0101 06000000 		.4byte	.LVL2
+ 498 0105 4F020000 		.4byte	0x24f
+ 499 0109 07       		.uleb128 0x7
+ 500 010a 18000000 		.4byte	.LVL3
+ 501 010e 5A020000 		.4byte	0x25a
+ 502 0112 00       		.byte	0
+ 503 0113 06       		.uleb128 0x6
+ 504 0114 30000000 		.4byte	.LASF22
+ 505 0118 01       		.byte	0x1
+ 506 0119 1E       		.byte	0x1e
+ 507 011a 00000000 		.4byte	.LFB34
+ 508 011e 20000000 		.4byte	.LFE34-.LFB34
+ 509 0122 01       		.uleb128 0x1
+ 510 0123 9C       		.byte	0x9c
+ 511 0124 43010000 		.4byte	0x143
+ 512 0128 07       		.uleb128 0x7
+ 513 0129 06000000 		.4byte	.LVL4
+ 514 012d 4F020000 		.4byte	0x24f
+ 515 0131 08       		.uleb128 0x8
+ 516 0132 18000000 		.4byte	.LVL5
+ 517 0136 5A020000 		.4byte	0x25a
+ 518 013a 09       		.uleb128 0x9
+ 519 013b 01       		.uleb128 0x1
+ 520 013c 50       		.byte	0x50
+ 521 013d 03       		.uleb128 0x3
+ 522 013e 0A       		.byte	0xa
+ 523 013f 5802     		.2byte	0x258
+ 524 0141 00       		.byte	0
+ 525 0142 00       		.byte	0
+ 526 0143 06       		.uleb128 0x6
+ 527 0144 3E000000 		.4byte	.LASF23
+ 528 0148 01       		.byte	0x1
+ 529 0149 25       		.byte	0x25
+ 530 014a 00000000 		.4byte	.LFB35
+ 531 014e 20000000 		.4byte	.LFE35-.LFB35
+ 532 0152 01       		.uleb128 0x1
+ 533 0153 9C       		.byte	0x9c
+ 534 0154 73010000 		.4byte	0x173
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 12
+
+
+ 535 0158 07       		.uleb128 0x7
+ 536 0159 06000000 		.4byte	.LVL6
+ 537 015d 4F020000 		.4byte	0x24f
+ 538 0161 08       		.uleb128 0x8
+ 539 0162 18000000 		.4byte	.LVL7
+ 540 0166 5A020000 		.4byte	0x25a
+ 541 016a 09       		.uleb128 0x9
+ 542 016b 01       		.uleb128 0x1
+ 543 016c 50       		.byte	0x50
+ 544 016d 03       		.uleb128 0x3
+ 545 016e 0A       		.byte	0xa
+ 546 016f BC02     		.2byte	0x2bc
+ 547 0171 00       		.byte	0
+ 548 0172 00       		.byte	0
+ 549 0173 06       		.uleb128 0x6
+ 550 0174 54000000 		.4byte	.LASF24
+ 551 0178 01       		.byte	0x1
+ 552 0179 2C       		.byte	0x2c
+ 553 017a 00000000 		.4byte	.LFB36
+ 554 017e 20000000 		.4byte	.LFE36-.LFB36
+ 555 0182 01       		.uleb128 0x1
+ 556 0183 9C       		.byte	0x9c
+ 557 0184 A3010000 		.4byte	0x1a3
+ 558 0188 07       		.uleb128 0x7
+ 559 0189 06000000 		.4byte	.LVL8
+ 560 018d 4F020000 		.4byte	0x24f
+ 561 0191 08       		.uleb128 0x8
+ 562 0192 18000000 		.4byte	.LVL9
+ 563 0196 5A020000 		.4byte	0x25a
+ 564 019a 09       		.uleb128 0x9
+ 565 019b 01       		.uleb128 0x1
+ 566 019c 50       		.byte	0x50
+ 567 019d 03       		.uleb128 0x3
+ 568 019e 0A       		.byte	0xa
+ 569 019f 2003     		.2byte	0x320
+ 570 01a1 00       		.byte	0
+ 571 01a2 00       		.byte	0
+ 572 01a3 06       		.uleb128 0x6
+ 573 01a4 07020000 		.4byte	.LASF25
+ 574 01a8 01       		.byte	0x1
+ 575 01a9 32       		.byte	0x32
+ 576 01aa 00000000 		.4byte	.LFB37
+ 577 01ae 20000000 		.4byte	.LFE37-.LFB37
+ 578 01b2 01       		.uleb128 0x1
+ 579 01b3 9C       		.byte	0x9c
+ 580 01b4 D3010000 		.4byte	0x1d3
+ 581 01b8 07       		.uleb128 0x7
+ 582 01b9 06000000 		.4byte	.LVL10
+ 583 01bd 4F020000 		.4byte	0x24f
+ 584 01c1 08       		.uleb128 0x8
+ 585 01c2 18000000 		.4byte	.LVL11
+ 586 01c6 5A020000 		.4byte	0x25a
+ 587 01ca 09       		.uleb128 0x9
+ 588 01cb 01       		.uleb128 0x1
+ 589 01cc 50       		.byte	0x50
+ 590 01cd 03       		.uleb128 0x3
+ 591 01ce 0A       		.byte	0xa
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 13
+
+
+ 592 01cf E803     		.2byte	0x3e8
+ 593 01d1 00       		.byte	0
+ 594 01d2 00       		.byte	0
+ 595 01d3 0A       		.uleb128 0xa
+ 596 01d4 F1000000 		.4byte	.LASF34
+ 597 01d8 01       		.byte	0x1
+ 598 01d9 39       		.byte	0x39
+ 599 01da 5D000000 		.4byte	0x5d
+ 600 01de 00000000 		.4byte	.LFB38
+ 601 01e2 50000000 		.4byte	.LFE38-.LFB38
+ 602 01e6 01       		.uleb128 0x1
+ 603 01e7 9C       		.byte	0x9c
+ 604 01e8 3E020000 		.4byte	0x23e
+ 605 01ec 07       		.uleb128 0x7
+ 606 01ed 08000000 		.4byte	.LVL12
+ 607 01f1 66020000 		.4byte	0x266
+ 608 01f5 07       		.uleb128 0x7
+ 609 01f6 0C000000 		.4byte	.LVL13
+ 610 01fa 72020000 		.4byte	0x272
+ 611 01fe 07       		.uleb128 0x7
+ 612 01ff 10000000 		.4byte	.LVL14
+ 613 0203 4F020000 		.4byte	0x24f
+ 614 0207 07       		.uleb128 0x7
+ 615 0208 28000000 		.4byte	.LVL15
+ 616 020c C3000000 		.4byte	0xc3
+ 617 0210 07       		.uleb128 0x7
+ 618 0211 2E000000 		.4byte	.LVL16
+ 619 0215 EB000000 		.4byte	0xeb
+ 620 0219 07       		.uleb128 0x7
+ 621 021a 34000000 		.4byte	.LVL17
+ 622 021e 13010000 		.4byte	0x113
+ 623 0222 07       		.uleb128 0x7
+ 624 0223 3A000000 		.4byte	.LVL18
+ 625 0227 43010000 		.4byte	0x143
+ 626 022b 07       		.uleb128 0x7
+ 627 022c 40000000 		.4byte	.LVL19
+ 628 0230 73010000 		.4byte	0x173
+ 629 0234 07       		.uleb128 0x7
+ 630 0235 46000000 		.4byte	.LVL20
+ 631 0239 A3010000 		.4byte	0x1a3
+ 632 023d 00       		.byte	0
+ 633 023e 0B       		.uleb128 0xb
+ 634 023f 2F010000 		.4byte	.LASF35
+ 635 0243 01       		.byte	0x1
+ 636 0244 0E       		.byte	0xe
+ 637 0245 8E000000 		.4byte	0x8e
+ 638 0249 05       		.uleb128 0x5
+ 639 024a 03       		.byte	0x3
+ 640 024b 00000000 		.4byte	led_state
+ 641 024f 0C       		.uleb128 0xc
+ 642 0250 4C000000 		.4byte	.LASF26
+ 643 0254 4C000000 		.4byte	.LASF26
+ 644 0258 02       		.byte	0x2
+ 645 0259 32       		.byte	0x32
+ 646 025a 0D       		.uleb128 0xd
+ 647 025b D0010000 		.4byte	.LASF27
+ 648 025f D0010000 		.4byte	.LASF27
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 14
+
+
+ 649 0263 03       		.byte	0x3
+ 650 0264 5501     		.2byte	0x155
+ 651 0266 0D       		.uleb128 0xd
+ 652 0267 5D020000 		.4byte	.LASF28
+ 653 026b 5D020000 		.4byte	.LASF28
+ 654 026f 03       		.byte	0x3
+ 655 0270 3201     		.2byte	0x132
+ 656 0272 0C       		.uleb128 0xc
+ 657 0273 16020000 		.4byte	.LASF29
+ 658 0277 16020000 		.4byte	.LASF29
+ 659 027b 04       		.byte	0x4
+ 660 027c 23       		.byte	0x23
+ 661 027d 00       		.byte	0
+ 662              		.section	.debug_abbrev,"",%progbits
+ 663              	.Ldebug_abbrev0:
+ 664 0000 01       		.uleb128 0x1
+ 665 0001 11       		.uleb128 0x11
+ 666 0002 01       		.byte	0x1
+ 667 0003 25       		.uleb128 0x25
+ 668 0004 0E       		.uleb128 0xe
+ 669 0005 13       		.uleb128 0x13
+ 670 0006 0B       		.uleb128 0xb
+ 671 0007 03       		.uleb128 0x3
+ 672 0008 0E       		.uleb128 0xe
+ 673 0009 1B       		.uleb128 0x1b
+ 674 000a 0E       		.uleb128 0xe
+ 675 000b 55       		.uleb128 0x55
+ 676 000c 17       		.uleb128 0x17
+ 677 000d 11       		.uleb128 0x11
+ 678 000e 01       		.uleb128 0x1
+ 679 000f 10       		.uleb128 0x10
+ 680 0010 17       		.uleb128 0x17
+ 681 0011 00       		.byte	0
+ 682 0012 00       		.byte	0
+ 683 0013 02       		.uleb128 0x2
+ 684 0014 24       		.uleb128 0x24
+ 685 0015 00       		.byte	0
+ 686 0016 0B       		.uleb128 0xb
+ 687 0017 0B       		.uleb128 0xb
+ 688 0018 3E       		.uleb128 0x3e
+ 689 0019 0B       		.uleb128 0xb
+ 690 001a 03       		.uleb128 0x3
+ 691 001b 0E       		.uleb128 0xe
+ 692 001c 00       		.byte	0
+ 693 001d 00       		.byte	0
+ 694 001e 03       		.uleb128 0x3
+ 695 001f 24       		.uleb128 0x24
+ 696 0020 00       		.byte	0
+ 697 0021 0B       		.uleb128 0xb
+ 698 0022 0B       		.uleb128 0xb
+ 699 0023 3E       		.uleb128 0x3e
+ 700 0024 0B       		.uleb128 0xb
+ 701 0025 03       		.uleb128 0x3
+ 702 0026 08       		.uleb128 0x8
+ 703 0027 00       		.byte	0
+ 704 0028 00       		.byte	0
+ 705 0029 04       		.uleb128 0x4
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 15
+
+
+ 706 002a 04       		.uleb128 0x4
+ 707 002b 01       		.byte	0x1
+ 708 002c 03       		.uleb128 0x3
+ 709 002d 0E       		.uleb128 0xe
+ 710 002e 0B       		.uleb128 0xb
+ 711 002f 0B       		.uleb128 0xb
+ 712 0030 49       		.uleb128 0x49
+ 713 0031 13       		.uleb128 0x13
+ 714 0032 3A       		.uleb128 0x3a
+ 715 0033 0B       		.uleb128 0xb
+ 716 0034 3B       		.uleb128 0x3b
+ 717 0035 0B       		.uleb128 0xb
+ 718 0036 01       		.uleb128 0x1
+ 719 0037 13       		.uleb128 0x13
+ 720 0038 00       		.byte	0
+ 721 0039 00       		.byte	0
+ 722 003a 05       		.uleb128 0x5
+ 723 003b 28       		.uleb128 0x28
+ 724 003c 00       		.byte	0
+ 725 003d 03       		.uleb128 0x3
+ 726 003e 0E       		.uleb128 0xe
+ 727 003f 1C       		.uleb128 0x1c
+ 728 0040 0B       		.uleb128 0xb
+ 729 0041 00       		.byte	0
+ 730 0042 00       		.byte	0
+ 731 0043 06       		.uleb128 0x6
+ 732 0044 2E       		.uleb128 0x2e
+ 733 0045 01       		.byte	0x1
+ 734 0046 3F       		.uleb128 0x3f
+ 735 0047 19       		.uleb128 0x19
+ 736 0048 03       		.uleb128 0x3
+ 737 0049 0E       		.uleb128 0xe
+ 738 004a 3A       		.uleb128 0x3a
+ 739 004b 0B       		.uleb128 0xb
+ 740 004c 3B       		.uleb128 0x3b
+ 741 004d 0B       		.uleb128 0xb
+ 742 004e 11       		.uleb128 0x11
+ 743 004f 01       		.uleb128 0x1
+ 744 0050 12       		.uleb128 0x12
+ 745 0051 06       		.uleb128 0x6
+ 746 0052 40       		.uleb128 0x40
+ 747 0053 18       		.uleb128 0x18
+ 748 0054 9742     		.uleb128 0x2117
+ 749 0056 19       		.uleb128 0x19
+ 750 0057 01       		.uleb128 0x1
+ 751 0058 13       		.uleb128 0x13
+ 752 0059 00       		.byte	0
+ 753 005a 00       		.byte	0
+ 754 005b 07       		.uleb128 0x7
+ 755 005c 898201   		.uleb128 0x4109
+ 756 005f 00       		.byte	0
+ 757 0060 11       		.uleb128 0x11
+ 758 0061 01       		.uleb128 0x1
+ 759 0062 31       		.uleb128 0x31
+ 760 0063 13       		.uleb128 0x13
+ 761 0064 00       		.byte	0
+ 762 0065 00       		.byte	0
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 16
+
+
+ 763 0066 08       		.uleb128 0x8
+ 764 0067 898201   		.uleb128 0x4109
+ 765 006a 01       		.byte	0x1
+ 766 006b 11       		.uleb128 0x11
+ 767 006c 01       		.uleb128 0x1
+ 768 006d 31       		.uleb128 0x31
+ 769 006e 13       		.uleb128 0x13
+ 770 006f 00       		.byte	0
+ 771 0070 00       		.byte	0
+ 772 0071 09       		.uleb128 0x9
+ 773 0072 8A8201   		.uleb128 0x410a
+ 774 0075 00       		.byte	0
+ 775 0076 02       		.uleb128 0x2
+ 776 0077 18       		.uleb128 0x18
+ 777 0078 9142     		.uleb128 0x2111
+ 778 007a 18       		.uleb128 0x18
+ 779 007b 00       		.byte	0
+ 780 007c 00       		.byte	0
+ 781 007d 0A       		.uleb128 0xa
+ 782 007e 2E       		.uleb128 0x2e
+ 783 007f 01       		.byte	0x1
+ 784 0080 3F       		.uleb128 0x3f
+ 785 0081 19       		.uleb128 0x19
+ 786 0082 03       		.uleb128 0x3
+ 787 0083 0E       		.uleb128 0xe
+ 788 0084 3A       		.uleb128 0x3a
+ 789 0085 0B       		.uleb128 0xb
+ 790 0086 3B       		.uleb128 0x3b
+ 791 0087 0B       		.uleb128 0xb
+ 792 0088 27       		.uleb128 0x27
+ 793 0089 19       		.uleb128 0x19
+ 794 008a 49       		.uleb128 0x49
+ 795 008b 13       		.uleb128 0x13
+ 796 008c 8701     		.uleb128 0x87
+ 797 008e 19       		.uleb128 0x19
+ 798 008f 11       		.uleb128 0x11
+ 799 0090 01       		.uleb128 0x1
+ 800 0091 12       		.uleb128 0x12
+ 801 0092 06       		.uleb128 0x6
+ 802 0093 40       		.uleb128 0x40
+ 803 0094 18       		.uleb128 0x18
+ 804 0095 9742     		.uleb128 0x2117
+ 805 0097 19       		.uleb128 0x19
+ 806 0098 01       		.uleb128 0x1
+ 807 0099 13       		.uleb128 0x13
+ 808 009a 00       		.byte	0
+ 809 009b 00       		.byte	0
+ 810 009c 0B       		.uleb128 0xb
+ 811 009d 34       		.uleb128 0x34
+ 812 009e 00       		.byte	0
+ 813 009f 03       		.uleb128 0x3
+ 814 00a0 0E       		.uleb128 0xe
+ 815 00a1 3A       		.uleb128 0x3a
+ 816 00a2 0B       		.uleb128 0xb
+ 817 00a3 3B       		.uleb128 0x3b
+ 818 00a4 0B       		.uleb128 0xb
+ 819 00a5 49       		.uleb128 0x49
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 17
+
+
+ 820 00a6 13       		.uleb128 0x13
+ 821 00a7 3F       		.uleb128 0x3f
+ 822 00a8 19       		.uleb128 0x19
+ 823 00a9 02       		.uleb128 0x2
+ 824 00aa 18       		.uleb128 0x18
+ 825 00ab 00       		.byte	0
+ 826 00ac 00       		.byte	0
+ 827 00ad 0C       		.uleb128 0xc
+ 828 00ae 2E       		.uleb128 0x2e
+ 829 00af 00       		.byte	0
+ 830 00b0 3F       		.uleb128 0x3f
+ 831 00b1 19       		.uleb128 0x19
+ 832 00b2 3C       		.uleb128 0x3c
+ 833 00b3 19       		.uleb128 0x19
+ 834 00b4 6E       		.uleb128 0x6e
+ 835 00b5 0E       		.uleb128 0xe
+ 836 00b6 03       		.uleb128 0x3
+ 837 00b7 0E       		.uleb128 0xe
+ 838 00b8 3A       		.uleb128 0x3a
+ 839 00b9 0B       		.uleb128 0xb
+ 840 00ba 3B       		.uleb128 0x3b
+ 841 00bb 0B       		.uleb128 0xb
+ 842 00bc 00       		.byte	0
+ 843 00bd 00       		.byte	0
+ 844 00be 0D       		.uleb128 0xd
+ 845 00bf 2E       		.uleb128 0x2e
+ 846 00c0 00       		.byte	0
+ 847 00c1 3F       		.uleb128 0x3f
+ 848 00c2 19       		.uleb128 0x19
+ 849 00c3 3C       		.uleb128 0x3c
+ 850 00c4 19       		.uleb128 0x19
+ 851 00c5 6E       		.uleb128 0x6e
+ 852 00c6 0E       		.uleb128 0xe
+ 853 00c7 03       		.uleb128 0x3
+ 854 00c8 0E       		.uleb128 0xe
+ 855 00c9 3A       		.uleb128 0x3a
+ 856 00ca 0B       		.uleb128 0xb
+ 857 00cb 3B       		.uleb128 0x3b
+ 858 00cc 05       		.uleb128 0x5
+ 859 00cd 00       		.byte	0
+ 860 00ce 00       		.byte	0
+ 861 00cf 00       		.byte	0
+ 862              		.section	.debug_aranges,"",%progbits
+ 863 0000 4C000000 		.4byte	0x4c
+ 864 0004 0200     		.2byte	0x2
+ 865 0006 00000000 		.4byte	.Ldebug_info0
+ 866 000a 04       		.byte	0x4
+ 867 000b 00       		.byte	0
+ 868 000c 0000     		.2byte	0
+ 869 000e 0000     		.2byte	0
+ 870 0010 00000000 		.4byte	.LFB32
+ 871 0014 1C000000 		.4byte	.LFE32-.LFB32
+ 872 0018 00000000 		.4byte	.LFB33
+ 873 001c 20000000 		.4byte	.LFE33-.LFB33
+ 874 0020 00000000 		.4byte	.LFB34
+ 875 0024 20000000 		.4byte	.LFE34-.LFB34
+ 876 0028 00000000 		.4byte	.LFB35
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 18
+
+
+ 877 002c 20000000 		.4byte	.LFE35-.LFB35
+ 878 0030 00000000 		.4byte	.LFB36
+ 879 0034 20000000 		.4byte	.LFE36-.LFB36
+ 880 0038 00000000 		.4byte	.LFB37
+ 881 003c 20000000 		.4byte	.LFE37-.LFB37
+ 882 0040 00000000 		.4byte	.LFB38
+ 883 0044 50000000 		.4byte	.LFE38-.LFB38
+ 884 0048 00000000 		.4byte	0
+ 885 004c 00000000 		.4byte	0
+ 886              		.section	.debug_ranges,"",%progbits
+ 887              	.Ldebug_ranges0:
+ 888 0000 00000000 		.4byte	.LFB32
+ 889 0004 1C000000 		.4byte	.LFE32
+ 890 0008 00000000 		.4byte	.LFB33
+ 891 000c 20000000 		.4byte	.LFE33
+ 892 0010 00000000 		.4byte	.LFB34
+ 893 0014 20000000 		.4byte	.LFE34
+ 894 0018 00000000 		.4byte	.LFB35
+ 895 001c 20000000 		.4byte	.LFE35
+ 896 0020 00000000 		.4byte	.LFB36
+ 897 0024 20000000 		.4byte	.LFE36
+ 898 0028 00000000 		.4byte	.LFB37
+ 899 002c 20000000 		.4byte	.LFE37
+ 900 0030 00000000 		.4byte	.LFB38
+ 901 0034 50000000 		.4byte	.LFE38
+ 902 0038 00000000 		.4byte	0
+ 903 003c 00000000 		.4byte	0
+ 904              		.section	.debug_line,"",%progbits
+ 905              	.Ldebug_line0:
+ 906 0000 EA000000 		.section	.debug_str,"MS",%progbits,1
+ 906      02005200 
+ 906      00000201 
+ 906      FB0E0D00 
+ 906      01010101 
+ 907              	.LASF16:
+ 908 0000 45535441 		.ascii	"ESTADO_60\000"
+ 908      444F5F36 
+ 908      3000
+ 909              	.LASF18:
+ 910 000a 45535441 		.ascii	"ESTADO_80\000"
+ 910      444F5F38 
+ 910      3000
+ 911              	.LASF20:
+ 912 0014 676F5F74 		.ascii	"go_to_state20\000"
+ 912      6F5F7374 
+ 912      61746532 
+ 912      3000
+ 913              	.LASF21:
+ 914 0022 676F5F74 		.ascii	"go_to_state40\000"
+ 914      6F5F7374 
+ 914      61746534 
+ 914      3000
+ 915              	.LASF22:
+ 916 0030 676F5F74 		.ascii	"go_to_state60\000"
+ 916      6F5F7374 
+ 916      61746536 
+ 916      3000
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 19
+
+
+ 917              	.LASF23:
+ 918 003e 676F5F74 		.ascii	"go_to_state70\000"
+ 918      6F5F7374 
+ 918      61746537 
+ 918      3000
+ 919              	.LASF26:
+ 920 004c 42545F52 		.ascii	"BT_Read\000"
+ 920      65616400 
+ 921              	.LASF24:
+ 922 0054 676F5F74 		.ascii	"go_to_state80\000"
+ 922      6F5F7374 
+ 922      61746538 
+ 922      3000
+ 923              	.LASF32:
+ 924 0062 433A5C55 		.ascii	"C:\\Users\\Henrique\\Documents\\PSoC Creator\\LAB7_"
+ 924      73657273 
+ 924      5C48656E 
+ 924      72697175 
+ 924      655C446F 
+ 925 0090 335F325F 		.ascii	"3_2_2_PWM\\LAB7_3_2_2_PWM.cydsn\000"
+ 925      325F5057 
+ 925      4D5C4C41 
+ 925      42375F33 
+ 925      5F325F32 
+ 926              	.LASF1:
+ 927 00af 756E7369 		.ascii	"unsigned char\000"
+ 927      676E6564 
+ 927      20636861 
+ 927      7200
+ 928              	.LASF5:
+ 929 00bd 6C6F6E67 		.ascii	"long unsigned int\000"
+ 929      20756E73 
+ 929      69676E65 
+ 929      6420696E 
+ 929      7400
+ 930              	.LASF3:
+ 931 00cf 73686F72 		.ascii	"short unsigned int\000"
+ 931      7420756E 
+ 931      7369676E 
+ 931      65642069 
+ 931      6E7400
+ 932              	.LASF10:
+ 933 00e2 646F7562 		.ascii	"double\000"
+ 933      6C6500
+ 934              	.LASF33:
+ 935 00e9 65737461 		.ascii	"estados\000"
+ 935      646F7300 
+ 936              	.LASF34:
+ 937 00f1 6D61696E 		.ascii	"main\000"
+ 937      00
+ 938              	.LASF17:
+ 939 00f6 45535441 		.ascii	"ESTADO_70\000"
+ 939      444F5F37 
+ 939      3000
+ 940              	.LASF8:
+ 941 0100 756E7369 		.ascii	"unsigned int\000"
+ 941      676E6564 
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 20
+
+
+ 941      20696E74 
+ 941      00
+ 942              	.LASF19:
+ 943 010d 45535441 		.ascii	"ESTADO_100\000"
+ 943      444F5F31 
+ 943      303000
+ 944              	.LASF7:
+ 945 0118 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 945      206C6F6E 
+ 945      6720756E 
+ 945      7369676E 
+ 945      65642069 
+ 946              	.LASF35:
+ 947 012f 6C65645F 		.ascii	"led_state\000"
+ 947      73746174 
+ 947      6500
+ 948              	.LASF30:
+ 949 0139 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 949      43313120 
+ 949      352E342E 
+ 949      31203230 
+ 949      31363036 
+ 950 016c 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 950      20726576 
+ 950      6973696F 
+ 950      6E203233 
+ 950      37373135 
+ 951 019f 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 951      66756E63 
+ 951      74696F6E 
+ 951      2D736563 
+ 951      74696F6E 
+ 952              	.LASF13:
+ 953 01c7 73697A65 		.ascii	"sizetype\000"
+ 953      74797065 
+ 953      00
+ 954              	.LASF27:
+ 955 01d0 50574D5F 		.ascii	"PWM_1_WriteCompare\000"
+ 955      315F5772 
+ 955      69746543 
+ 955      6F6D7061 
+ 955      726500
+ 956              	.LASF6:
+ 957 01e3 6C6F6E67 		.ascii	"long long int\000"
+ 957      206C6F6E 
+ 957      6720696E 
+ 957      7400
+ 958              	.LASF31:
+ 959 01f1 6D61696E 		.ascii	"main.c\000"
+ 959      2E6300
+ 960              	.LASF11:
+ 961 01f8 63686172 		.ascii	"char\000"
+ 961      00
+ 962              	.LASF2:
+ 963 01fd 73686F72 		.ascii	"short int\000"
+ 963      7420696E 
+ 963      7400
+ARM GAS  C:\Users\Henrique\AppData\Local\Temp\cc0twXqK.s 			page 21
+
+
+ 964              	.LASF25:
+ 965 0207 676F5F74 		.ascii	"go_to_state100\000"
+ 965      6F5F7374 
+ 965      61746531 
+ 965      303000
+ 966              	.LASF29:
+ 967 0216 436C6F63 		.ascii	"Clock_Start\000"
+ 967      6B5F5374 
+ 967      61727400 
+ 968              	.LASF4:
+ 969 0222 6C6F6E67 		.ascii	"long int\000"
+ 969      20696E74 
+ 969      00
+ 970              	.LASF12:
+ 971 022b 6C6F6E67 		.ascii	"long double\000"
+ 971      20646F75 
+ 971      626C6500 
+ 972              	.LASF9:
+ 973 0237 666C6F61 		.ascii	"float\000"
+ 973      7400
+ 974              	.LASF0:
+ 975 023d 7369676E 		.ascii	"signed char\000"
+ 975      65642063 
+ 975      68617200 
+ 976              	.LASF14:
+ 977 0249 45535441 		.ascii	"ESTADO_20\000"
+ 977      444F5F32 
+ 977      3000
+ 978              	.LASF15:
+ 979 0253 45535441 		.ascii	"ESTADO_40\000"
+ 979      444F5F34 
+ 979      3000
+ 980              	.LASF28:
+ 981 025d 50574D5F 		.ascii	"PWM_1_Start\000"
+ 981      315F5374 
+ 981      61727400 
+ 982              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
