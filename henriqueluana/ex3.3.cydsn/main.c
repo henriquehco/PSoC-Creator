@@ -69,49 +69,47 @@ int main(void)
     for(;;)
    
     {
-       if (be_Read() == 1){
         
-        switch(M_state){
+      switch(M_state){
         
         case Estado_1:
+        if (be_Read() == 1){
         go_to_state2();
+        }
+        else if (bd_Read() == 1){
+        go_to_state4();
+        }
         break;
          
         case Estado_2:
+        if (be_Read() == 1){
         go_to_state3();
-        break;
-        
-        case Estado_3:
-        go_to_state4();
-        break;
-         
-        case Estado_4:
+        }
+        else if (bd_Read() == 1){
         go_to_state1();
-        break;
-        }
-        }
-    if (bd_Read() == 0){
-        
-        switch(M_state)
-    {    
-        case Estado_1:
-        go_to_state4();
+        }       
         break;
         
-        case Estado_4:
-        go_to_state3();
-        break;
-         
         case Estado_3:
+        else if (be_Read() == 1){
+        go_to_state4();
+        }
+        else else if (bd_Read() == 1){
         go_to_state2();
-        break;
-        
-        case  Estado_2:
-        go_to_state1();
+        }
         break;
          
-    }
-    }
+        case Estado_4:
+        else if (be_Read() == 1){
+        go_to_state1();
+        }
+        else if (bd_Read() == 1){
+        go_to_state3();
+        }
+        break;
+     }
+        }
+  
 
    CyDelay(200);
         
