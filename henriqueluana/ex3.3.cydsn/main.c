@@ -7,7 +7,7 @@
  * CONFIDENTIAL AND PROPRIETARY INFORMATION
  * WHICH IS THE PROPERTY OF your company.
  *
- * ========================================
+ * ==============================================
 */
 #include "project.h"
 enum estados {Estado_1, Estado_2, Estado_3, Estado_4};
