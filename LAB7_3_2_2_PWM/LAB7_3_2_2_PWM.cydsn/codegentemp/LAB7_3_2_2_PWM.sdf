@@ -1,6 +1,6 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2022-10-06T14:27:57Z")
+ (DATE "2022-10-08T00:29:04Z")
  (DESIGN "LAB7_3_2_2_PWM")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
@@ -13,7 +13,7 @@
   (DELAY
    (ABSOLUTE
     (INTERCONNECT LED\(0\).pad_out LED\(0\).pad_in (0.000:0.000:0.000))
-    (INTERCONNECT \\PWM_1\:cy_m0s8_tcpwm_1\\.line LED\(0\).pin_input (1.000:1.000:1.000))
+    (INTERCONNECT \\PWM_1\:cy_m0s8_tcpwm_1\\.line LED\(0\).pin_input (5.695:5.695:5.695))
     (INTERCONNECT ClockBlock.ff_div_8 \\PWM_1\:cy_m0s8_tcpwm_1\\.clock (0.000:0.000:0.000))
     (INTERCONNECT BT\(0\)_PAD BT\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT LED\(0\).pad_out LED\(0\)_PAD (0.000:0.000:0.000))

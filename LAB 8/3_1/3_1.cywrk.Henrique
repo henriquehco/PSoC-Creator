@@ -123,6 +123,30 @@
 <VisibleNodeIds>
 <v>3_1</v>
 <v>3_1\3_1</v>
+<v>3_1\3_1\CortexM0</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\ISR.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_PM.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_SW2.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_SW2_PM.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\3_1.elf</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\3_1.hex</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\3_1.map</v>
+<v>3_1\3_1\3_1.gpdsc</v>
 <v>3_1\3_1\3_1.rpt</v>
 <v>3_1\3_1\3_1_timing.html</v>
 </VisibleNodeIds>
@@ -170,6 +194,7 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\3_1.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\3_1.cydsn\main.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -177,7 +202,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1078, 735" SelectedTabbedMdiWindow="44e20099-fe9f-4911-ab2c-99b6e4c759ef"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="592eed0f-69c2-4692-bfc5-1d40d24a7741" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\TopDesign\TopDesign.cysch" Guid="44e20099-fe9f-4911-ab2c-99b6e4c759ef" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="608, 515" SelectedTabbedMdiWindow="e495b26c-05a0-4c19-a2a4-9fd5516e0c0c"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="592eed0f-69c2-4692-bfc5-1d40d24a7741" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\TopDesign\TopDesign.cysch" Guid="44e20099-fe9f-4911-ab2c-99b6e4c759ef" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\main.c" Guid="e495b26c-05a0-4c19-a2a4-9fd5516e0c0c" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

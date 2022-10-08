@@ -1,5 +1,5 @@
 -- Project:   LAB7_3_2_2_PWM
--- Generated: 10/06/2022 11:27:56
+-- Generated: 10/07/2022 21:29:03
 -- PSoC Creator  4.4
 
 ENTITY LAB7_3_2_2_PWM IS
@@ -41,6 +41,7 @@ ARCHITECTURE __DEFAULT__ OF LAB7_3_2_2_PWM IS
     ATTRIBUTE lib_model OF BT(0) : LABEL IS "iocell1";
     ATTRIBUTE Location OF BT(0) : LABEL IS "P0[7]";
     ATTRIBUTE lib_model OF LED(0) : LABEL IS "iocell2";
+    ATTRIBUTE Location OF LED(0) : LABEL IS "P1[6]";
     COMPONENT iocell
         PORT (
             oe : IN std_ulogic;
