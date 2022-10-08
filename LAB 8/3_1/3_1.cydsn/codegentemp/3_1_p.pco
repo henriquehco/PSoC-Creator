@@ -15,4 +15,5 @@ set_location "ClockBlock_LFClk__SYNC_1" synccell 1 1 5 1
 set_location "ISR" interrupt -1 -1 0
 set_location "ISR_TIMER" interrupt -1 -1 1
 set_location "Pin_SW2" logicalport -1 -1 0
-set_io "LED(0)" iocell 1 6
+set_io "LED(0)" iocell 3 5
+set_io "Pin_1(0)" iocell 0 4

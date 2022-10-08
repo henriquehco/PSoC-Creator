@@ -25,6 +25,10 @@
   <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\LED_PM.c" value="SOURCE_C;CortexM0;;;;LED" />
   <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\ISR_TIMER.c" value="SOURCE_C;CortexM0;;;;ISR_TIMER" />
   <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\ISR_TIMER.h" value="HEADER;;;;;ISR_TIMER" />
+  <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\Pin_1.c" value="SOURCE_C;CortexM0;;;;Pin_1" />
+  <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\Pin_1.h" value="HEADER;;;;;Pin_1" />
+  <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\Pin_1_aliases.h" value="HEADER;;;;;Pin_1" />
+  <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\Pin_1_PM.c" value="SOURCE_C;CortexM0;;;;Pin_1" />
   <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\Timer_2.c" value="SOURCE_C;CortexM0;;;;Timer_2" />
   <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\Timer_2.h" value="HEADER;;;;;Timer_2" />
   <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\Timer_2_PM.c" value="SOURCE_C;CortexM0;;;;Timer_2" />

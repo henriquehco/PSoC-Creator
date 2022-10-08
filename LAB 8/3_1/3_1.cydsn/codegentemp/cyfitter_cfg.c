@@ -472,14 +472,12 @@ void cyfitter_cfg(void)
 		cfg_write_bytes32(cy_cfg_addr_table, cy_cfg_data_table);
 
 		/* HSIOM Starting address: CYDEV_HSIOM_BASE */
+		CY_SET_REG32((void *)(CYDEV_HSIOM_BASE), 0x00030000u);
 		CY_SET_REG32((void *)(CYREG_HSIOM_PORT_SEL3), 0x0000EE00u);
 
 		/* UDB_PA_0 Starting address: CYDEV_UDB_PA0_BASE */
 		CY_SET_REG32((void *)(CYDEV_UDB_PA0_BASE), 0x00990000u);
 		CY_SET_REG32((void *)(CYREG_UDB_PA0_CFG4), 0x80000000u);
-
-		/* UDB_PA_1 Starting address: CYDEV_UDB_PA1_BASE */
-		CY_SET_REG32((void *)(CYDEV_UDB_PA1_BASE), 0x00990000u);
 
 		/* UDB_PA_3 Starting address: CYDEV_UDB_PA3_BASE */
 		CY_SET_REG32((void *)(CYDEV_UDB_PA3_BASE), 0x00990000u);
@@ -497,15 +495,12 @@ void cyfitter_cfg(void)
 
 	/* Perform second pass device configuration. These items must be configured in specific order after the regular configuration is done. */
 	/* IOPINS0_0 Starting address: CYDEV_PRT0_BASE */
-	CY_SET_REG32((void *)(CYDEV_PRT0_BASE), 0x00000080u);
-	CY_SET_REG32((void *)(CYREG_PRT0_PC), 0x00400000u);
+	CY_SET_REG32((void *)(CYDEV_PRT0_BASE), 0x00000090u);
+	CY_SET_REG32((void *)(CYREG_PRT0_PC), 0x00406000u);
 	CY_SET_REG32((void *)(CYREG_PRT0_INTCFG), 0x00008000u);
 
-	/* IOPINS0_1 Starting address: CYDEV_PRT1_BASE */
-	CY_SET_REG32((void *)(CYREG_PRT1_PC), 0x00180000u);
-
 	/* IOPINS0_3 Starting address: CYDEV_PRT3_BASE */
-	CY_SET_REG32((void *)(CYREG_PRT3_PC), 0x00000D80u);
+	CY_SET_REG32((void *)(CYREG_PRT3_PC), 0x00030D80u);
 
 
 	/* Setup clocks based on selections from Clock DWR */

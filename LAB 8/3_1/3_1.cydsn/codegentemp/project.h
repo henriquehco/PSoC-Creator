@@ -24,6 +24,8 @@
 #include "LED.h"
 #include "LED_aliases.h"
 #include "ISR_TIMER.h"
+#include "Pin_1.h"
+#include "Pin_1_aliases.h"
 #include "Timer_2.h"
 #include "core_cm0_psoc4.h"
 #include "CyFlash.h"
