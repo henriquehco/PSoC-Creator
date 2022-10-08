@@ -16,10 +16,12 @@
 <dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
 <dep name=".\Generated_Source\PSoC4\CyLib.h" />
 <dep name=".\Generated_Source\PSoC4\ISR.h" />
+<dep name=".\Generated_Source\PSoC4\ISR_TIMER.h" />
 <dep name=".\Generated_Source\PSoC4\LED.h" />
 <dep name=".\Generated_Source\PSoC4\LED_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\Pin_SW2.h" />
 <dep name=".\Generated_Source\PSoC4\Pin_SW2_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\Timer_2.h" />
 <dep name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
 <dep name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
 <dep name=".\Generated_Source\PSoC4\cmsis_gcc.h" />
@@ -40,10 +42,12 @@
 <file name=".\Generated_Source\PSoC4\CyLFClk.h" />
 <file name=".\Generated_Source\PSoC4\CyLib.h" />
 <file name=".\Generated_Source\PSoC4\ISR.h" />
+<file name=".\Generated_Source\PSoC4\ISR_TIMER.h" />
 <file name=".\Generated_Source\PSoC4\LED.h" />
 <file name=".\Generated_Source\PSoC4\LED_aliases.h" />
 <file name=".\Generated_Source\PSoC4\Pin_SW2.h" />
 <file name=".\Generated_Source\PSoC4\Pin_SW2_aliases.h" />
+<file name=".\Generated_Source\PSoC4\Timer_2.h" />
 <file name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
 <file name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
 <file name=".\Generated_Source\PSoC4\cmsis_gcc.h" />
@@ -111,6 +115,17 @@
 <dep name=".\cyapicallbacks.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\ISR.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\ISR_TIMER.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\ISR_TIMER.c" />
+<dep name=".\Generated_Source\PSoC4\ISR_TIMER.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\ISR_TIMER.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\LED.o">
 <dep name=".\Generated_Source\PSoC4\LED.c" />
 <dep name=".\Generated_Source\PSoC4\LED.h" />
@@ -151,6 +166,26 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\Pin_SW2_PM.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\Timer_2.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\Timer_2.c" />
+<dep name=".\Generated_Source\PSoC4\Timer_2.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\Timer_2.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\Timer_2_PM.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\Timer_2.h" />
+<dep name=".\Generated_Source\PSoC4\Timer_2_PM.c" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\Timer_2_PM.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\cyPm.o">
 <dep name=".\Generated_Source\PSoC4\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
@@ -200,6 +235,18 @@
 <file name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" />
 <file name=".\Generated_Source\PSoC4\cydevicegnu_trm.inc" />
 <file name=".\Generated_Source\PSoC4\cyfittergnu.inc" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\ISR_1.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\ISR_1.c" />
+<dep name=".\Generated_Source\PSoC4\ISR_1.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\ISR_1.c" />
+<file name=".\Generated_Source\PSoC4\ISR_1.h" />
 <file name=".\Generated_Source\PSoC4\Pin_SW2_int_StartEx.h" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\Pin_SW2_int_StartEx.o">
 <dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
@@ -253,6 +300,9 @@
 <dep name=".\CortexM0\ARM_GCC_541\Debug\LED.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\LED_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\ISR.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\Timer_2.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\Timer_2_PM.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\ISR_TIMER.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\3_1.a" />
 </file>
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
@@ -284,6 +334,10 @@
 <name_val_pair name="Generated_Source\PSoC4\LED_PM.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC4\Pin_SW2_int_StartEx.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC4\ISR.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\ISR_1.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\Timer_2.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\Timer_2_PM.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\ISR_TIMER.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 </name>
 </genericCmdLineData>
 <codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\Henrique\AppData\Local\Cypress Semiconductor\PSoC Creator\4.4&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p &quot;C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\3_1.cyprj&quot; -d CY8C4245AXI-483 -s &quot;C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\Generated_Source\PSoC4&quot; -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
@@ -359,6 +413,41 @@
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\Custom\custom.cs</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\PSoC4\API\intc.c</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\PSoC4\API\intc.h</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.cyprimitive</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.cysym</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.cystate</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\version.cypatch</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\PSoC4\API\clk.c</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\PSoC4\API\clk.h</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_clock_v2_20\Custom\custom.cs</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.cysym</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.pdf</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\version.cypatch</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Timer_v2_80.cycdx</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Timer_v2_80.cysym</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Timer_v2_80.pdf</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Timer_v2_80.cystate</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\API\Timer.c</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\API\Timer.h</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\API\Timer_PM.c</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\cycustomizer.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\cyparameters.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Resources.Designer.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Utils\cyutils.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Utils\cyenums.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Utils\cyclock.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Utils\cyconstants.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Tabs\cytabbase.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Tabs\cytimercontrol.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Tabs\cytimercontrol.Designer.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Resources.resx</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Tabs\cytimercontrol.resx</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\PSoC4\Timer_v2_80.cysch</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_Timer_v2_80\B_Timer_v2_80.cysym</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_Timer_v2_80\B_Timer_v2_80.v</v>
 <v>.\3_1.cydwr</v>
 <v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_boot_v6_0\PSoC4\API\cm0gcc.ld</v>
 <v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_boot_v6_0\PSoC4\API\Cm0RealView.scat</v>
@@ -448,13 +537,23 @@
 <v>Generated_Source\PSoC4\Pin_SW2_int_StartEx.h</v>
 <v>Generated_Source\PSoC4\ISR.c</v>
 <v>Generated_Source\PSoC4\ISR.h</v>
+<v>Generated_Source\PSoC4\ISR_1.c</v>
+<v>Generated_Source\PSoC4\ISR_1.h</v>
+<v>Generated_Source\PSoC4\Timer_2.c</v>
+<v>Generated_Source\PSoC4\Timer_2.h</v>
+<v>Generated_Source\PSoC4\Timer_2_PM.c</v>
+<v>Generated_Source\PSoC4\ISR_TIMER.c</v>
+<v>Generated_Source\PSoC4\ISR_TIMER.h</v>
 </gen_list>
 <warp_dep>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\ieee\work\stdlogic.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif</v>
+<v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.v</v>
+<v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cy_psoc3_inc.v</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
+<v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif</v>
 </warp_dep>
-<deps_time v="133096576273724071" />
+<deps_time v="133096652186828230" />
 <top_block v="TopDesign" />
 <last_generation v="0" />
 <pdl_path v="" />
@@ -464,7 +563,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="133096577360524776" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="133096653782889644" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>

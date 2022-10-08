@@ -95,6 +95,11 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LED_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ISR.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ISR.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Timer_2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Timer_2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Timer_2_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ISR_TIMER.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\ISR_TIMER.h</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">

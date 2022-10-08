@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="3_1\3_1\Source Files\main.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="3_1\3_1\Generated_Source\PSoC4\Timer_2\Timer_2.h">
 <ExpandedNodeIds>
 <v>3_1</v>
 <v>3_1\3_1</v>
@@ -32,6 +32,7 @@
 <v>3_1\3_1\Source Files\main.c</v>
 <v>3_1\3_1\Generated_Source</v>
 <v>3_1\3_1\Generated_Source\PSoC4</v>
+<v>3_1\3_1\Generated_Source\PSoC4\Timer_2</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>3_1</v>
@@ -55,8 +56,13 @@
 <v>3_1\3_1\Generated_Source\PSoC4\cy_lfclk</v>
 <v>3_1\3_1\Generated_Source\PSoC4\Em_EEPROM_Dynamic</v>
 <v>3_1\3_1\Generated_Source\PSoC4\ISR</v>
+<v>3_1\3_1\Generated_Source\PSoC4\ISR_TIMER</v>
 <v>3_1\3_1\Generated_Source\PSoC4\LED</v>
 <v>3_1\3_1\Generated_Source\PSoC4\Pin_SW2</v>
+<v>3_1\3_1\Generated_Source\PSoC4\Timer_2</v>
+<v>3_1\3_1\Generated_Source\PSoC4\Timer_2\Timer_2.c</v>
+<v>3_1\3_1\Generated_Source\PSoC4\Timer_2\Timer_2.h</v>
+<v>3_1\3_1\Generated_Source\PSoC4\Timer_2\Timer_2_PM.c</v>
 <v>3_1\3_1\Generated_Source\PSoC4\cycodeshareexport.ld</v>
 <v>3_1\3_1\Generated_Source\PSoC4\cycodeshareimport.ld</v>
 <v>3_1\3_1\Generated_Source\PSoC4\cycodeshareimport.scat</v>
@@ -108,11 +114,14 @@
 <v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
 <v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
 <v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\ISR.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\ISR_TIMER.lst</v>
 <v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED.lst</v>
 <v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_PM.lst</v>
 <v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_SW2.lst</v>
 <v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_SW2_PM.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\Timer_2.lst</v>
+<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\Timer_2_PM.lst</v>
 <v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\3_1.elf</v>
 <v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\3_1.hex</v>
 <v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\3_1.map</v>
@@ -123,30 +132,6 @@
 <VisibleNodeIds>
 <v>3_1</v>
 <v>3_1\3_1</v>
-<v>3_1\3_1\CortexM0</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\ISR.lst</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED.lst</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_PM.lst</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_SW2.lst</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\Listing Files\Pin_SW2_PM.lst</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\3_1.elf</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\3_1.hex</v>
-<v>3_1\3_1\CortexM0\ARM_GCC_541\Debug\3_1.map</v>
-<v>3_1\3_1\3_1.gpdsc</v>
 <v>3_1\3_1\3_1.rpt</v>
 <v>3_1\3_1\3_1_timing.html</v>
 </VisibleNodeIds>
@@ -165,11 +150,15 @@
 <v>3_1\3_1\System Reference Guides</v>
 <v>3_1\3_1\System Reference Guides\cy_boot_v6_0</v>
 <v>3_1\3_1\System Reference Guides\cy_lfclk_v1_20</v>
-<v>3_1\3_1\cy_isr_v1_70.pdf</v>
+<v>3_1\3_1\cy_clock_v2_20.pdf</v>
+<v>3_1\3_1\cy_isr_v1_70</v>
+<v>3_1\3_1\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
 <v>3_1\3_1\cy_pins_v2_20</v>
 <v>3_1\3_1\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>3_1\3_1\Gnd_v1_0.pdf</v>
 <v>3_1\3_1\SwitchSPST_v1_0.pdf</v>
+<v>3_1\3_1\Timer_v2_80.pdf</v>
+<v>3_1\3_1\ZeroTerminal.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>3_1</v>
@@ -179,11 +168,15 @@
 <v>3_1\3_1\System Reference Guides</v>
 <v>3_1\3_1\System Reference Guides\cy_boot_v6_0</v>
 <v>3_1\3_1\System Reference Guides\cy_lfclk_v1_20</v>
-<v>3_1\3_1\cy_isr_v1_70.pdf</v>
+<v>3_1\3_1\cy_clock_v2_20.pdf</v>
+<v>3_1\3_1\cy_isr_v1_70</v>
+<v>3_1\3_1\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
 <v>3_1\3_1\cy_pins_v2_20</v>
 <v>3_1\3_1\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>3_1\3_1\Gnd_v1_0.pdf</v>
 <v>3_1\3_1\SwitchSPST_v1_0.pdf</v>
+<v>3_1\3_1\Timer_v2_80.pdf</v>
+<v>3_1\3_1\ZeroTerminal.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -195,6 +188,7 @@
 <OpenDocs>
 <name v=".\3_1.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\3_1.cydsn\main.c" />
+<name v=".\3_1.cydsn\3_1.cydwr" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -202,7 +196,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="608, 515" SelectedTabbedMdiWindow="e495b26c-05a0-4c19-a2a4-9fd5516e0c0c"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="592eed0f-69c2-4692-bfc5-1d40d24a7741" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\TopDesign\TopDesign.cysch" Guid="44e20099-fe9f-4911-ab2c-99b6e4c759ef" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\main.c" Guid="e495b26c-05a0-4c19-a2a4-9fd5516e0c0c" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1570, 818" SelectedTabbedMdiWindow="e495b26c-05a0-4c19-a2a4-9fd5516e0c0c"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="592eed0f-69c2-4692-bfc5-1d40d24a7741" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\TopDesign\TopDesign.cysch" Guid="44e20099-fe9f-4911-ab2c-99b6e4c759ef" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\main.c" Guid="e495b26c-05a0-4c19-a2a4-9fd5516e0c0c" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\3_1.cydwr" Guid="d547e451-81b6-4fb9-b480-919bf0f8d8e7" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

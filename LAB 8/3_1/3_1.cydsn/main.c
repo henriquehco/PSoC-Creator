@@ -13,16 +13,27 @@
 
 CY_ISR (Pin_SW2_Handler)
 {
+   
    LED_Write( ~LED_Read() );
    
    Pin_SW2_ClearInterrupt ();
 }
+
+CY_ISR (MY_ISR_TIMER)
+{
+   
+   LED_Write( ~LED_Read() );
+   
+   Timer_2_ReadStatusRegister();
+}
+
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
 
     ISR_StartEx(Pin_SW2_Handler);
-    //Pin_SW2_int_StartEx (Pin_SW2_Handler);
+    Timer_2_Start ();
+    ISR_TIMER_StartEx(MY_ISR_TIMER);
 
     for(;;)
     {

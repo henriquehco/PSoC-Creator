@@ -23,6 +23,11 @@
   <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\LED.h" value="HEADER;;;;;LED" />
   <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\LED_aliases.h" value="HEADER;;;;;LED" />
   <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\LED_PM.c" value="SOURCE_C;CortexM0;;;;LED" />
+  <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\ISR_TIMER.c" value="SOURCE_C;CortexM0;;;;ISR_TIMER" />
+  <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\ISR_TIMER.h" value="HEADER;;;;;ISR_TIMER" />
+  <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\Timer_2.c" value="SOURCE_C;CortexM0;;;;Timer_2" />
+  <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\Timer_2.h" value="HEADER;;;;;Timer_2" />
+  <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\Timer_2_PM.c" value="SOURCE_C;CortexM0;;;;Timer_2" />
   <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\cm0gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />
   <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\Cm0RealView.scat" value="LINKER_SCRIPT;;;fdb8e1ae-f83a-46cf-9446-1d703716f38a;;cy_boot" />
   <file name="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\codegentemp\Cm0Start.c" value="SOURCE_C;CortexM0;;;;cy_boot" />

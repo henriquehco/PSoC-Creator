@@ -1,6 +1,6 @@
 // ======================================================================
 // 3_1.v generated from TopDesign.cysch
-// 10/07/2022 at 20:07
+// 10/07/2022 at 22:13
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -144,9 +144,94 @@
 `define CYDEV_CHIP_FAMILY_USED 2
 `define CYDEV_CHIP_MEMBER_USED 26
 `define CYDEV_CHIP_REVISION_USED 17
+// Component: ZeroTerminal
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v"
+`endif
+
+// Component: B_Timer_v2_80
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_Timer_v2_80"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_Timer_v2_80\B_Timer_v2_80.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_Timer_v2_80"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_Timer_v2_80\B_Timer_v2_80.v"
+`endif
+
+// Timer_v2_80(CaptureAlternatingFall=false, CaptureAlternatingRise=false, CaptureCount=2, CaptureCounterEnabled=false, CaptureInputEnabled=true, CaptureMode=1, CONTROL3=0, ControlRegRemoved=0, CtlModeReplacementString=SyncCtl, CyGetRegReplacementString=CY_GET_REG32, CySetRegReplacementString=CY_SET_REG32, DeviceFamily=PSoC4, EnableMode=0, FF16=false, FF8=false, FixedFunction=false, FixedFunctionUsed=0, HWCaptureCounterEnabled=false, InterruptOnCapture=false, InterruptOnFIFOFull=false, InterruptOnTC=true, IntOnCapture=0, IntOnFIFOFull=0, IntOnTC=1, NumberOfCaptures=1, param45=1, Period=31999, RegDefReplacementString=reg32, RegSizeReplacementString=uint32, Resolution=32, RstStatusReplacementString=rstSts, RunMode=0, SiliconRevision=17, SoftwareCaptureModeEnabled=false, SoftwareTriggerModeEnabled=false, TriggerInputEnabled=false, TriggerMode=0, UDB16=false, UDB24=false, UDB32=true, UDB8=false, UDBControlReg=true, UsesHWEnable=0, VerilogSectionReplacementString=sT32, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=Timer_v2_80, CY_CONFIG_TITLE=Timer_2, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=Timer_2, CY_INSTANCE_SHORT_NAME=Timer_2, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=80, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=Timer_2, )
+module Timer_v2_80_0 (
+    capture,
+    capture_out,
+    clock,
+    enable,
+    interrupt,
+    reset,
+    tc,
+    trigger);
+    input       capture;
+    output      capture_out;
+    input       clock;
+    input       enable;
+    output      interrupt;
+    input       reset;
+    output      tc;
+    input       trigger;
+
+    parameter CaptureCount = 2;
+    parameter CaptureCounterEnabled = 0;
+    parameter DeviceFamily = "PSoC4";
+    parameter InterruptOnCapture = 0;
+    parameter InterruptOnTC = 1;
+    parameter Resolution = 32;
+    parameter SiliconRevision = "17";
+
+
+    B_Timer_v2_80 TimerUDB (
+        .capture_in(capture),
+        .capture_out(capture_out),
+        .clock(clock),
+        .enable(enable),
+        .interrupt(interrupt),
+        .reset(reset),
+        .tc(tc),
+        .trigger(trigger));
+    defparam TimerUDB.Capture_Count = 2;
+    defparam TimerUDB.CaptureCounterEnabled = 0;
+    defparam TimerUDB.CaptureMode = 1;
+    defparam TimerUDB.EnableMode = 0;
+    defparam TimerUDB.InterruptOnCapture = 0;
+    defparam TimerUDB.Resolution = 32;
+    defparam TimerUDB.RunMode = 0;
+    defparam TimerUDB.TriggerMode = 0;
+
+
+
+endmodule
+
 // top
 module top ;
 
+          wire  Net_124;
+          wire  Net_123;
+          wire  Net_121;
+          wire  Net_120;
+          wire  Net_119;
+          wire  Net_154;
+          wire  Net_62;
+          wire  Net_86;
+          wire  Net_88;
           wire  Net_14;
     electrical  Net_13;
     electrical  Net_8;
@@ -326,6 +411,45 @@ module top ;
 		  .out_reset({1'b0}));
 
 	assign tmpOE__LED_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b10))
+		ISR_TIMER
+		 (.int_signal(Net_62));
+
+
+
+	cy_clock_v1_0
+		#(.id("89b9b1a6-60d2-4b9f-8ea9-0c012644aac6"),
+		  .source_clock_id("9A908CA6-5BB3-4db0-B098-959E5D90882B"),
+		  .divisor(0),
+		  .period("0"),
+		  .is_direct(1),
+		  .is_digital(0))
+		timer_clock_2
+		 (.clock_out(Net_86));
+
+
+    ZeroTerminal ZeroTerminal_3 (
+        .z(Net_88));
+
+    Timer_v2_80_0 Timer_2 (
+        .capture(1'b0),
+        .capture_out(Net_120),
+        .clock(Net_86),
+        .enable(1'b1),
+        .interrupt(Net_62),
+        .reset(Net_88),
+        .tc(Net_123),
+        .trigger(1'b1));
+    defparam Timer_2.CaptureCount = 2;
+    defparam Timer_2.CaptureCounterEnabled = 0;
+    defparam Timer_2.DeviceFamily = "PSoC4";
+    defparam Timer_2.InterruptOnCapture = 0;
+    defparam Timer_2.InterruptOnTC = 1;
+    defparam Timer_2.Resolution = 32;
+    defparam Timer_2.SiliconRevision = "17";
 
 
 

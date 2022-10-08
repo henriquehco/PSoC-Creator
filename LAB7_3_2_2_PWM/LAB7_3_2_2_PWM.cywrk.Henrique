@@ -131,6 +131,32 @@
 <VisibleNodeIds>
 <v>LAB7_3_2_2_PWM</v>
 <v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\BT.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\BT_PM.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\Clock.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\LED.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_PM.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_1.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\Listing Files\PWM_1_PM.lst</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\LAB7_3_2_2_PWM.elf</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\LAB7_3_2_2_PWM.hex</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\CortexM0\ARM_GCC_541\Debug\LAB7_3_2_2_PWM.map</v>
+<v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\LAB7_3_2_2_PWM.gpdsc</v>
 <v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\LAB7_3_2_2_PWM.rpt</v>
 <v>LAB7_3_2_2_PWM\LAB7_3_2_2_PWM\LAB7_3_2_2_PWM_timing.html</v>
 </VisibleNodeIds>
@@ -186,7 +212,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1200, 735" SelectedTabbedMdiWindow="00c733a2-a65a-4b88-843c-bf3e1d2543ac"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="592eed0f-69c2-4692-bfc5-1d40d24a7741" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB7_3_2_2_PWM\LAB7_3_2_2_PWM.cydsn\TopDesign\TopDesign.cysch" Guid="af3a542b-15f9-48b0-8808-d83ae4e5e8e7" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB7_3_2_2_PWM\LAB7_3_2_2_PWM.cydsn\LAB7_3_2_2_PWM.cydwr" Guid="df818509-6f42-4a72-ae1e-75a22cf5aa00" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB7_3_2_2_PWM\LAB7_3_2_2_PWM.cydsn\main.c" Guid="00c733a2-a65a-4b88-843c-bf3e1d2543ac" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB7_3_2_2_PWM\LAB7_3_2_2_PWM.cydsn\Generated_Source\PSoC4\BT.c" Guid="82448d5f-e148-4573-9c55-87e8ef7a1286" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1570, 818" SelectedTabbedMdiWindow="00c733a2-a65a-4b88-843c-bf3e1d2543ac"><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB7_3_2_2_PWM\LAB7_3_2_2_PWM.cydsn\TopDesign\TopDesign.cysch" Guid="af3a542b-15f9-48b0-8808-d83ae4e5e8e7" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB7_3_2_2_PWM\LAB7_3_2_2_PWM.cydsn\LAB7_3_2_2_PWM.cydwr" Guid="df818509-6f42-4a72-ae1e-75a22cf5aa00" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB7_3_2_2_PWM\LAB7_3_2_2_PWM.cydsn\main.c" Guid="00c733a2-a65a-4b88-843c-bf3e1d2543ac" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB7_3_2_2_PWM\LAB7_3_2_2_PWM.cydsn\Generated_Source\PSoC4\BT.c" Guid="82448d5f-e148-4573-9c55-87e8ef7a1286" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="592eed0f-69c2-4692-bfc5-1d40d24a7741" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
