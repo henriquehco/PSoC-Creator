@@ -218,8 +218,6 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\3_1.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\3_1.cydsn\main.c" />
 <name v=".\3_1.cydsn\3_1.cydwr" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
@@ -228,7 +226,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1570, 818" SelectedTabbedMdiWindow="e495b26c-05a0-4c19-a2a4-9fd5516e0c0c"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="592eed0f-69c2-4692-bfc5-1d40d24a7741" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\TopDesign\TopDesign.cysch" Guid="44e20099-fe9f-4911-ab2c-99b6e4c759ef" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\main.c" Guid="e495b26c-05a0-4c19-a2a4-9fd5516e0c0c" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\3_1.cydwr" Guid="d547e451-81b6-4fb9-b480-919bf0f8d8e7" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1897, 625" SelectedTabbedMdiWindow="d547e451-81b6-4fb9-b480-919bf0f8d8e7"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="592eed0f-69c2-4692-bfc5-1d40d24a7741" /><DocumentWindow Key="C:\Users\Henrique\Documents\PSoC Creator\LAB 8\3_1\3_1.cydsn\3_1.cydwr" Guid="d547e451-81b6-4fb9-b480-919bf0f8d8e7" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

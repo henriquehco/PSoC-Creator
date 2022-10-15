@@ -10,16 +10,33 @@
  * ========================================
 */
 #include "project.h"
+#include <stdio.h>
 
 int main(void)
 {
+    
+    
     CyGlobalIntEnable; /* Enable global interrupts. */
 
-    /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+    int16 result1 = 0;
+    float res1_volts = 0;
+    char str_out[50];
 
+    ADC_Start();
+    ADC_StartConvert();
+    UART_Start();
+    
+    
     for(;;)
     {
-        /* Place your application code here. */
+        ADC_IsEndConversion(ADC_WAIT_FOR_RESULT );
+        result1 = ADC_GetResult16(0); // le resultado do canal 0
+        res1_volts = ADC_CountsTo_Volts(0,result1); // converte o resultado para volts
+        int result10 = res1_volts*1000;
+        sprintf(str_out, "Digital=%d Volts = %d \n\r",result1,result10);
+        UART_PutString(str_out);
+        CyDelay(50);
+
     }
 }
 
